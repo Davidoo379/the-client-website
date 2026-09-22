@@ -1,1 +1,123 @@
-<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediaconnect - Dashboard</title>
+
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="" alt="">
+        <h1>Dashboard</h1>
+        <button><img src="hamburger-menu-icon.svg" alt=""></button>
+        <nav>
+            <ul>
+                <li>
+                    <a href="opportunities.html">Opportunities</a>
+                    <img src="airhorn-icon.svg" alt="airhorn-icon">
+                </li>
+                <li>
+                    <a href="events-and-conventions.html">Events & conventions</a>
+                    <img src="calender-icon.svg" alt="calender">
+                </li>
+                <li>
+                    <a href="colleagues.html">Colleagues</a>
+                    <img src="three-figures.svg" alt="three-figures">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome back Jane!</h2>
+            <nav>
+                <ul>
+                    <li><a href="colleagues.html">Find colleagues</a></li>
+                    <li><a href="opportunities.html">Browse Opportunities</a></li>
+                    <li><a href="events-and-conventions.html">Events & conventions</a></li>
+                </ul>
+            </nav>
+        </section>
+        <hr>
+        <section>
+            <h2>Recommend for you</h2>
+            <p>Projects, questions and colleagues selected based on your preferences</p>
+            <select name="recommended-filter" id="recommended-filter">
+                <option value="colleagues">Colleagues</option>
+                <option value="opportunities">Opportunities</option>
+                <option value="open-questions">Open questions</option>
+                <option value="events">Events</option>
+            </select>
+            <button>
+                <img src="arrow-circle.svg" alt="arrow-circle">
+            </button>
+            <ul>
+                <li id="opportunitie-card"></li>
+                <li id="colleague-card"></li>
+                <li id="open-question-card"></li>
+                <li id="event-card"></li>
+            </ul>
+            <div>
+                <img src="swipe-finger-icon.svg" alt="swipe-finger-icon">
+                <p>Swipe left to see more recommendations</p>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Your booked marked content</h2>
+            <select name="bookmark-filter" id="bookmark-filter">
+                <option value="colleagues">Colleagues</option>
+                <option value="opportunities">Opportunities</option>
+                <option value="open-questions">Open questions</option>
+                <option value="events">Events</option>
+            </select>
+            <button>
+                <img src="magnifying-glass.svg" alt="magnifying-glass">
+            </button>
+            <ul>
+                <li id="opportunitie-card"></li>
+                <li id="colleague-card"></li>
+                <li id="open-question-card"></li>
+                <li id="event-card"></li>
+            </ul>
+            <div>
+                <img src="swipe-finger-icon.svg" alt="swipe-finger-icon">
+                <p>Swipe left to see more recommendations</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="home-icon.svg" alt="home-icon"></a></li>
+                <li><button><img src="profile-icon.svg" alt="profile-icon"></button></li>
+                <li><a href="#"><img src="speak-bubble-icon.svg" alt="home-icon"></a></li>
+                <li><a href="#"><img src="bell-icon.svg" alt="bell-icon"></a></li>
+            </ul>
+            <div>
+                <button><img src="x-icon.svg" alt="x-icon"></button>
+                <ul>
+                    <li>
+                        <img src="kog-icon.svg" alt="kog-icon">
+                        <p>Settings</p>
+                    </li>
+                    <li>
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        <p>Create opportunity</p>
+                    </li>
+                    <li>
+                        <img src="profile-icon.svg" alt="profile-icon">
+                        <p>My profile</p>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
