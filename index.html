@@ -13,111 +13,168 @@
     <header>
         <img src="pedia-connect.jpg" alt="pedia-connect">
         <h1>Dashboard</h1>
-        <button><img src="hamburger-menu-icon.svg" alt=""></button>
-        <nav>
-            <ul>
-                <li>
-                    <a href="opportunities.html">Opportunities</a>
-                    <img src="airhorn-icon.svg" alt="airhorn-icon">
-                </li>
-                <li>
-                    <a href="events-and-conventions.html">Events & conventions</a>
-                    <img src="calender-icon.svg" alt="calender">
-                </li>
-                <li>
-                    <a href="colleagues.html">Colleagues</a>
-                    <img src="three-figures.svg" alt="three-figures">
-                </li>
-            </ul>
+        <button popovertarget="navigation-menu">
+            <img src="hamburger-menu-icon.svg" alt="">
+        </button>
+        <nav popover id="navigation-menu">
+            <button popovertarget="navigation-menu">
+                <img src="x-icon.svg" alt="x-icon">
+            </button>
+            <a href="opportunities.html">
+                <img src="airhorn-icon.svg" alt="airhorn-icon">
+                Opportunities
+            </a>
+
+            <a href="events-and-conventions.html">
+                <img src="calender-icon.svg" alt="calender">
+                Events & conventions
+            </a>
+
+            <a href="colleagues.html">
+                <img src="three-figures.svg" alt="three-figures">
+                Colleagues
+            </a>
         </nav>
     </header>
     <main>
         <section>
             <h2>Welcome back Jane!</h2>
             <nav>
-                <ul>
-                    <li><a href="colleagues.html">Find colleagues</a></li>
-                    <li><a href="opportunities.html">Browse Opportunities</a></li>
-                    <li><a href="events-and-conventions.html">Events & conventions</a></li>
-                </ul>
+                <a href="colleagues.html">Find colleagues</a>
+                <a href="opportunities.html">Browse Opportunities</a>
+                <a href="events-and-conventions.html">Events & conventions</a>
             </nav>
         </section>
-        <hr>
         <section>
             <h2>Recommend for you</h2>
             <p>Projects, questions and colleagues selected based on your preferences</p>
             <select name="recommended-filter" id="recommended-filter">
+                <option value="show-all-content">Show all content</option>
                 <option value="colleagues">Colleagues</option>
                 <option value="opportunities">Opportunities</option>
                 <option value="open-questions">Open questions</option>
                 <option value="events">Events</option>
             </select>
-            <button>
+            <button onclick="alert='Implementation missing'" popovertarget="refresh-popover-menu">
                 <img src="arrow-circle.svg" alt="arrow-circle">
             </button>
-            <ul>
-                <li id="opportunitie-card"></li>
-                <li id="colleague-card"></li>
-                <li id="open-question-card"></li>
-                <li id="event-card"></li>
-            </ul>
+            <div popover id="refresh-popover-menu">
+                <a href="#">Refresh the suggestion</a>
+                <a href="/user/settings.html/#feed-prefrences">Change your preferences</a>
+            </div>
+            <article>
+                <a href="/details/opportunity-details.html">
+                    <header>
+                        <cite>
+                            Anthony Martina
+                            Medival researcher
+                        </cite>
+                        <button onclick="alert('Implementation missing!')">
+                            <img src="bookmark-icon.svg" alt="bookmark">
+                        </button>
+                        <button popovertarget="opportunity-card-options">
+                            <img src="vertical-dots-icon.svg" alt="vertical-dots-icon">
+                        </button>
+                        <div popover id="opportunity-card-options">
+                            <a href="">
+                                <img src="questionmark-icon.svg" alt="questionmark-icon">
+                                Why was this suggested?
+                            </a>
+                            <button onclick="alert('Implementation missing!')">
+                                <img src="thumbs-down-icon.svg" alt="thumbs-down-icon">
+                                Show less content from this user
+                            </button>
+                            <button onclick="alert('Implementation missing!')">
+                                <img src="thumbs-up-icon.svg" alt="thumbs-up-icon">
+                                Show more content from this user
+                            </button>
+                            <a>
+                                <img src="waringsign-icon.svg" alt="waringsign-icon">
+                                <p>Report issues</p>
+                            </a>
+                        </div>
+                    </header>
+                    <main>
+                        <h3>From Data to Decisions: Improving Clinical Insight Through Pediatric care</h3>
+                        <ul>
+                            <li>Data Interpretation</li>
+                        </ul>
+                    </main>
+                    <footer>
+                        <p>Project</p>
+                        <p>Internship</p>
+                    </footer>
+                </a>
+            </article>
+            <!-- TODO THE COLLEAGUES CARD TYPES -->
+            <!-- TODO THE OPEN QUESTION CARD TYPES -->
+            <!-- TODO THE EVENT CARD TYPES -->
             <div>
                 <img src="swipe-finger-icon.svg" alt="swipe-finger-icon">
                 <p>Swipe left to see more recommendations</p>
             </div>
         </section>
-        <hr>
         <section>
             <h2>Your booked marked content</h2>
             <select name="bookmark-filter" id="bookmark-filter">
+                <option value="show-all-content">Show all content</option>
                 <option value="colleagues">Colleagues</option>
                 <option value="opportunities">Opportunities</option>
                 <option value="open-questions">Open questions</option>
                 <option value="events">Events</option>
             </select>
-            <button>
-                <img src="magnifying-glass.svg" alt="magnifying-glass">
-            </button>
-            <ul>
-                <li id="opportunitie-card"></li>
-                <li id="colleague-card"></li>
-                <li id="open-question-card"></li>
-                <li id="event-card"></li>
-            </ul>
+            <search>
+                <button popovertarget="bookmark-search-form">
+                    <img src="magnifying-glass.svg" alt="magnifying-glass">
+                </button>
+                <form action="search" popover id="bookmark-search-form">
+                    <label for="bookmark-search">Search:</label>
+                    <input type="search" id="bookmark-search" placeholder="Type here">
+                </form>
+            </search>
+            <!-- TODO THE OPPORTUNITY CARD TYPES -->
+            <!-- TODO THE COLLEAGUES QUOTE CARD TYPES -->
+            <!-- TODO THE OPEN QUESTION CARD TYPES -->
+            <!-- TODO THE EVENT CARD TYPES -->
             <div>
                 <img src="swipe-finger-icon.svg" alt="swipe-finger-icon">
                 <p>Swipe left to see more recommendations</p>
             </div>
         </section>
     </main>
-    <footer>
+    <aside>
         <nav>
-            <ul>
-                <li><a href="#"><img src="home-icon.svg" alt="home-icon"></a></li>
-                <li><button><img src="profile-icon.svg" alt="profile-icon"></button></li>
-                <li><a href="#"><img src="speak-bubble-icon.svg" alt="home-icon"></a></li>
-                <li><a href="#"><img src="bell-icon.svg" alt="bell-icon"></a></li>
-            </ul>
-            <div>
-                <button><img src="x-icon.svg" alt="x-icon"></button>
-                <ul>
-                    <li>
-                        <img src="kog-icon.svg" alt="kog-icon">
-                        <p>Settings</p>
-                    </li>
-                    <li>
-                        <img src="plus-icon.svg" alt="plus-icon">
-                        <p>Create opportunity</p>
-                    </li>
-                    <li>
-                        <img src="profile-icon.svg" alt="profile-icon">
-                        <p>My profile</p>
-                    </li>
-                    
-                </ul>
+            <a href="#">
+                <img src="home-icon.svg" alt="home-icon">
+            </a>
+            <button popovertarget="user-menu">
+                <img src="profile-icon.svg" alt="profile-icon">
+            </button>
+            <div popover id="user-menu">
+                <button popovertarget="user-menu">
+                    <img src="x-icon.svg" alt="x-icon">
+                </button>
+                <a href="/user/settings.html">
+                    <img src="kog-icon.svg" alt="kog-icon">
+                    Settings
+                </a>
+                <a href="/user/create-opportunity.html">
+                    <img src="plus-icon.svg" alt="plus-icon">
+                    Create opportunity
+                </a>
+                <a href="/user/profile.html">
+                    <img src="profile-icon.svg" alt="profile-icon">
+                    My profile
+                </a>
             </div>
+            <a href="/user/chats.html">
+                <img src="speak-bubble-icon.svg" alt="speak-bubble-icon">
+            </a>
+            <a href="/user/notifications.html">
+                <img src="bell-icon.svg" alt="bell-icon">
+            </a>
         </nav>
-    </footer>
+    </aside>
 </body>
 
 </html>
