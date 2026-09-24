@@ -1,11 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events and Conventions details</title>
+    <title>Pediaconnect - Events and Conventions</title>
+
+    <script src="scripts/script.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <a href="../index.html">
+            <img src="pediaconnect-icon.svg" alt="pediaconnect-icon">
+        </a>
+        <h1>Events</h1>
+        <button popovertarget="navigation-menu">
+            <img src="hamburger-menu-icon.svg" alt="">
+        </button>
+        <nav popover id="navigation-menu">
+            <button popovertarget="navigation-menu">
+                <img src="x-icon.svg" alt="x-icon">
+            </button>
+            <a href="opportunities.html">
+                <img src="airhorn-icon.svg" alt="air-horn-icon">
+                Opportunities
+            </a>
+
+            <a href="events-and-conventions.html">
+                <img src="calender-icon.svg" alt="calender">
+                Events & conventions
+            </a>
+
+            <a href="colleagues.html">
+                <img src="three-figures.svg" alt="three-figures">
+                Colleagues
+            </a>
+        </nav>
+        <search>
+            <form action="http://httpbin.org/post">
+                <input type="search" placeholder="search in events">
+                <button type="submit">
+                    <img src="magnifying-glass-icon.svg" alt="magnifying-glass-icon">
+                </button>
+            </form>
+        </search>
+        <button popovertarget="sort-menu">
+            <img src="up-and-down-arrows-icon.svg" alt="up-and-down-arrows-icon">
+        </button>
+        <form popover id="sort-menu" action="http://httpbin.org/post">
+            <p>Sort by:</p>
+            <input type="radio" id="relevancy" name="sort-prefrence">
+            <label for="relevancy">Relevancy</label>
+            <input type="radio" id="recently added" name="sort-prefrence">
+            <label for="recently added">Recently added</label>
+            <input type="radio" id="distance" name="sort-prefrence">
+            <label for="distance">Distance</label>
+            <input type="radio" id="a-z" name="sort-prefrence">
+            <label for="a-z">A-Z</label>
+            <input type="radio" id="z-a" name="sort-prefrence">
+            <label for="z-a">Z-A</label>
+        </form>
+        <button popovertarget="filter-menu">
+            <img src="up-and-down-arrows-icon.svg" alt="up-and-down-arrows-icon">
+        </button>
+        <aside popover id="filter-menu">
+            <div>
+                <button popovertarget="filter-menu">
+                    <img src="x-icon.svg" alt="x-icon">
+                </button>
+                <search>
+                    <form action="http://httpbin.org/post-opportunitie">
+                        <input type="search">
+                        <button type="submit">
+                            <img src="magnifying-glass-icon.svg" alt="magnifying-glass-icon">
+                        </button>
+                    </form>
+                </search>
+                <button onclick="alert='Implementation missing'">
+                    <img src="backwards-clock-icon.svg" alt="backwards-clock-icon">
+                    History
+                </button>
+            </div>
+            <form id="type-of-event" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Type of event (4)</summary>
+                    <input type="checkbox" name="type-of-event" id="congress">
+                    <label for="congress">
+                        <img src="congress-icon.svg" alt="congress-icon">
+                        Congress
+                    </label>
+                    <input type="checkbox" name="type-of-event" id="symposium">
+                    <label for="symposium">
+                        <img src="lectern-icon.svg" alt="lectern-icon">
+                        Symposium
+                    </label>
+                    <input type="checkbox" name="type-of-event" id="webinar">
+                    <label for="webinar">
+                        <img src="world-wide-web-icon.svg" alt="world-wide-web-icon">
+                        Webinar
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                    <button onclick="alert='Implementation missing'">
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        see all options
+                    </button>
+                </details>
+            </form>
+            <form id="type-of-event" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Type of event (4)</summary>
+                    <input type="checkbox" name="type-of-event" id="congress">
+                    <label for="congress">
+                        <img src="congress-icon.svg" alt="congress-icon">
+                        Congress
+                    </label>
+                    <input type="checkbox" name="type-of-event" id="symposium">
+                    <label for="symposium">
+                        <img src="lectern-icon.svg" alt="lectern-icon">
+                        Symposium
+                    </label>
+                    <input type="checkbox" name="type-of-event" id="webinar">
+                    <label for="webinar">
+                        <img src="world-wide-web-icon.svg" alt="world-wide-web-icon">
+                        Webinar
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                    <button onclick="alert='Implementation missing'">
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        see all options
+                    </button>
+                </details>
+            </form>
+            <form id="hospital-or-research-institude" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Sub(specialism) (39)</summary>
+                    <input type="checkbox" name="hospital-or-research-institude" id="admiraal-deruyter-hospital">
+                    <label for="admiraal-deruyter-hospital">
+                        Admiraal De Ruyter Hospital
+                    </label>
+                    <input type="checkbox" name="hospital-or-research-institude" id="alrbert-schweitzer-hospital">
+                    <label for="alrbert-schweitzer-hospital">
+                        Albert Schweitzer hospital
+                    </label>
+                    <input type="checkbox" name="hospital-or-research-institude"
+                        id="amalia-childernshospital-radboudumc">
+                    <label for="amalia-childernshospital-radboudumc">
+                        Amalia Childrenshospital (Radboudumc)
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                    <button onclick="alert='Implementation missing'">
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        see all options
+                    </button>
+                </details>
+            </form>
+            <form id="distance" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Sub(specialism) (39)</summary>
+                    <input type="checkbox" name="distance" id="5-km">
+                    <label for="5-km">
+                        5 km
+                    </label>
+                    <input type="checkbox" name="distance" id="10-km">
+                    <label for="10-km">
+                        10 km
+                    </label>
+                    <input type="checkbox" name="distance" id="25-km">
+                    <label for="25-km">
+                        25 km
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                    <button onclick="alert='Implementation missing'">
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        see all options
+                    </button>
+                </details>
+            </form>
+            <form id="mesh-terms" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Mesh-terms</summary>
+                    <input type="checkbox" name="role" id="anatomy">
+                    <label for="anatomy">
+                        Anatomy
+                        <button onclick="alert='Implementation missing'">See all terms</button>
+                    </label>
+                    <input type="checkbox" name="role"
+                        id="analytical-diagnostic-and-therapeutic-techniques-and-equipment">
+                    <label for="analytical-diagnostic-and-therapeutic-techniques-and-equipment">
+                        Analytical, Diagnostic and Therapeutic Techniques and Equipment
+                        <button onclick="alert='Implementation missing'">See all terms</button>
+                    </label>
+                    <input type="checkbox" name="role" id="anthropology-education-sociology-and-social-phenomena">
+                    <label for="anthropology-education-sociology-and-social-phenomena">
+                        Anthropology, Education, Sociology and Social Phenomena
+                        <button onclick="alert='Implementation missing'">See all terms</button>
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                    <button onclick="alert='Implementation missing'">
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        see all options
+                    </button>
+                </details>
+            </form>
+            <button onclick="submitEventsAndConventionsFilters()">
+                show results
+            </button>
+        </aside>
+        <button>
+            <img src="map-pin-icon.svg" alt="map-pin-icon">
+        </button>
+        <button>
+            <img src="list-icon.svg" alt="list-icon">
+        </button>
+        <p>345 events</p>
+    </header>
+    <main>
+        <section>
+            <h2>
+                <time datetime="2026-01-28">Wednesday 28 January 2026</time>
+            </h2>
+            <article>
+                <a href="/details/event-details.html">
+                    <main>
+                        <time datetime="01-28">
+                            <p>28/01</p>
+                            <p>Mon</p>
+                        </time>
+                        <p><span>Location:</span> Online</p>
+                        <p>
+                            <span>Time:</span><time datetime="11:00">11:00</time> - <time datetime="17:00">17:00</time>
+                        </p>
+                        <h3>Webinar: Together we stand up against aggression in (child) care</h3>
+                        <p>Attendees (23)</p>
+                        <div>
+                            <img src="person-1.webp" alt="person-1">
+                            <img src="person-2.webp" alt="person-2">
+                            <img src="person-3.webp" alt="person-3">
+                            <img src="person-4.webp" alt="person-4">
+                            <button>See all</button>
+                        </div>
+                    </main>
+                    <footer>
+                        <p>
+                            <img src="world-wide-web-icon.svg" alt="world-wide-web-icon">
+                            Webinar
+                        </p>
+                    </footer>
+                </a>
+            </article>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-01-29">Thursday 29 January 2026</time>
+            </h2>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-01-30">Friday 30 January 2026</time>
+            </h2>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-01-31">Saterday 31 January 2026</time>
+            </h2>
+            <article>
+                <a href="/details/event-details.html">
+                    <main>
+                        <time datetime="01-31">
+                            <p>31/01</p>
+                            <p>Sat</p>
+                        </time>
+                        <p><span>Location:</span> NYC Congress, Lichtenvoorde</p>
+                        <p>
+                            <span>Time:</span><time datetime="9:00">9:00</time> - <time datetime="17:00">17:00</time>
+                        </p>
+                        <h3>The journey of pediatric medical care towards a transmural future</h3>
+                        <p>Attendees (23)</p>
+                        <div>
+                            <img src="person-1.webp" alt="person-1">
+                            <img src="person-2.webp" alt="person-2">
+                            <img src="person-3.webp" alt="person-3">
+                            <img src="person-4.webp" alt="person-4">
+                            <button>See all</button>
+                        </div>
+                    </main>
+                    <footer>
+                        <p>
+                            <img src="congress-icon.svg" alt="congress-icon">
+                            Congress
+                        </p>
+                    </footer>
+                </a>
+            </article>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-02-01">Sunday 01 February 2026</time>
+            </h2>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-02-02">Monday 02 February 2026</time>
+            </h2>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-02-03">Tuesday 03 February 2026</time>
+            </h2>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-02-04">Wednesday 04 February 2026</time>
+            </h2>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-02-05">Thursday 05 February 2026</time>
+            </h2>
+            <article>
+                <a href="/details/event-details.html">
+                    <main>
+                        <time datetime="02-05">
+                            <p>05/02</p>
+                            <p>Thu</p>
+                        </time>
+                        <p><span>Location:</span> Reehorst, Ede</p>
+                        <p>
+                            <span>Time:</span><time datetime="8:45">8:45</time> - <time datetime="16:30">16:30</time>
+                        </p>
+                        <h3>Natoopma; Pediatric Dermatology Day: Pediatrocian and dermatologist: together we achieve
+                            more!</h3>
+                        <p>Attendees (23)</p>
+                        <div>
+                            <img src="person-1.webp" alt="person-1">
+                            <img src="person-2.webp" alt="person-2">
+                            <img src="person-3.webp" alt="person-3">
+                            <img src="person-4.webp" alt="person-4">
+                            <button>See all</button>
+                        </div>
+                    </main>
+                    <footer>
+                        <p>
+                            <img src="lectern-icon.svg" alt="lectern-icon">
+                            Symposium
+                        </p>
+                    </footer>
+                </a>
+            </article>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-02-06">Friday 06 February 2026</time>
+            </h2>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-02-07">Saterday 07 February 2026</time>
+            </h2>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-02-08">Sunday 08 February 2026</time>
+            </h2>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-02-09">Monday 09 February 2026</time>
+            </h2>
+        </section>
+        <section>
+            <h2>
+                <time datetime="2026-02-10">Tuesday 10 February 2026</time>
+            </h2>
+            <article>
+                <a href="/details/event-details.html">
+                    <main>
+                        <time datetime="02-10">
+                            <p>10/02</p>
+                            <p>Thu</p>
+                        </time>
+                        <p><span>Location:</span> NH Hotel</p>
+                        <p>
+                            <span>Time:</span><time datetime="9:30">9:30</time> - <time datetime="16:00">16:00</time>
+                        </p>
+                        <h3>Congress on psychiatry around pregnancy</h3>
+                        <p>Attendees (23)</p>
+                        <div>
+                            <img src="person-1.webp" alt="person-1">
+                            <img src="person-2.webp" alt="person-2">
+                            <img src="person-3.webp" alt="person-3">
+                            <img src="person-4.webp" alt="person-4">
+                            <button>See all</button>
+                        </div>
+                    </main>
+                    <footer>
+                        <p>
+                            <img src="congress-icon.svg" alt="congress-icon">
+                            Congress
+                        </p>
+                    </footer>
+                </a>
+            </article>
+        </section>
+        <div>
+            <p>Loading more events</p>
+            <img src="loading-logo-icon.svg" alt="loading-logo-icon">
+        </div>
+    </main>
+    <aside>
+        <nav>
+            <a href="index.html">
+                <img src="home-icon.svg" alt="home-icon">
+            </a>
+            <button popovertarget="user-menu">
+                <img src="profile-icon.svg" alt="profile-icon">
+            </button>
+            <div popover id="user-menu">
+                <button popovertarget="user-menu">
+                    <img src="x-icon.svg" alt="x-icon">
+                </button>
+                <a href="/user/settings.html">
+                    <img src="kog-icon.svg" alt="kog-icon">
+                    Settings
+                </a>
+                <a href="/user/create-opportunity.html">
+                    <img src="plus-icon.svg" alt="plus-icon">
+                    Create opportunity
+                </a>
+                <a href="/user/profile.html">
+                    <img src="profile-icon.svg" alt="profile-icon">
+                    My profile
+                </a>
+            </div>
+            <a href="/user/chats.html">
+                <img src="speak-bubble-icon.svg" alt="speak-bubble-icon">
+            </a>
+            <a href="/user/notifications.html">
+                <img src="bell-icon.svg" alt="bell-icon">
+            </a>
+        </nav>
+    </aside>
 </body>
+
 </html>

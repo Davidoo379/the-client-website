@@ -11,7 +11,9 @@
 
 <body>
     <header>
-        <img src="pedia-connect.jpg" alt="pedia-connect">
+        <a href="index.html">
+            <img src="pediaconnect-icon.svg" alt="pediaconnect-icon">
+        </a>
         <h1>Dashboard</h1>
         <button popovertarget="navigation-menu">
             <img src="hamburger-menu-icon.svg" alt="">
@@ -20,17 +22,17 @@
             <button popovertarget="navigation-menu">
                 <img src="x-icon.svg" alt="x-icon">
             </button>
-            <a href="opportunities.html">
+            <a href="/content/opportunities.html">
                 <img src="airhorn-icon.svg" alt="air-horn-icon">
                 Opportunities
             </a>
 
-            <a href="events-and-conventions.html">
+            <a href="/content/events-and-conventions.html">
                 <img src="calender-icon.svg" alt="calender">
                 Events & conventions
             </a>
 
-            <a href="colleagues.html">
+            <a href="/content/colleagues.html">
                 <img src="three-figures.svg" alt="three-figures">
                 Colleagues
             </a>
@@ -40,9 +42,9 @@
         <section>
             <h2>Welcome back Jane!</h2>
             <nav>
-                <a href="colleagues.html">Find colleagues</a>
-                <a href="opportunities.html">Browse Opportunities</a>
-                <a href="events-and-conventions.html">Events & conventions</a>
+                <a href="/content/colleagues.html">Find colleagues</a>
+                <a href="/content/opportunities.html">Browse Opportunities</a>
+                <a href="/content/events-and-conventions.html">Events & conventions</a>
             </nav>
         </section>
         <section>
@@ -67,8 +69,8 @@
                     <a href="/details/opportunity-details.html">
                         <header>
                             <cite>
-                                Anthony Martina
-                                Medival researcher
+                                <p>Anthony Martina</p>
+                                <p>Medival researcher</p>
                             </cite>
                             <button onclick="alert('Implementation missing!')">
                                 <img src="bookmark-icon.svg" alt="bookmark">
@@ -99,6 +101,8 @@
                             <h3>From Data to Decisions: Improving Clinical Insight Through Pediatric care</h3>
                             <div>
                                 <p>Data Interpretation</p>
+                                <p>Clinical Decision-Making</p>
+                                <p>Outcome Assessment (Health Care)</p>
                             </div>
                         </main>
                         <footer>
@@ -184,7 +188,7 @@
                             </div>
                         </header>
                         <main>
-                            <h3>How do you approuch complex clinical decisions in pediatrics?</h3>
+                            <h3>How do you approuch complex clinical decisions in Pediatrics?</h3>
                             <p>
                                 <img src="speak-bubble-icon.svg" alt="speak-bubble-icon">
                                 3 Comments
@@ -232,7 +236,7 @@
                                 <p>28/01</p>
                                 <p>Mon</p>
                             </time>
-                            <p>Location: Online</p>
+                            <p><span>Location:</span> Online</p>
                             <p>
                                 Time:<time datetime="11:00">11:00</time> - <time datetime="17:00">17:00</time>
                             </p>
@@ -264,11 +268,10 @@
             </select>
             <search>
                 <button popovertarget="bookmark-search-form">
-                    <img src="magnifying-glass.svg" alt="magnifying-glass">
+                    <img src="magnifying-glass-icon.svg" alt="magnifying-glass-icon">
                 </button>
-                <form action="search" popover id="bookmark-search-form">
-                    <label for="bookmark-search">Search:</label>
-                    <input type="search" id="bookmark-search" placeholder="Type here">
+                <form action="search" popover id="http://httpbin.org/get">
+                    <input type="search" id="bookmark-search" placeholder="search in bookmarks">
                 </form>
             </search>
             <div>
