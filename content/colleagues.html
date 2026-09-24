@@ -1,11 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colleagues</title>
+    <title>Pediaconnect - Colleagues</title>
+
+    <script src="scripts/script.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <a href="../index.html">
+            <img src="pediaconnect-icon.svg" alt="pediaconnect-icon">
+        </a>
+        <h1>Events</h1>
+        <button popovertarget="navigation-menu">
+            <img src="hamburger-menu-icon.svg" alt="">
+        </button>
+        <nav popover id="navigation-menu">
+            <button popovertarget="navigation-menu">
+                <img src="x-icon.svg" alt="x-icon">
+            </button>
+            <a href="opportunities.html">
+                <img src="airhorn-icon.svg" alt="air-horn-icon">
+                Opportunities
+            </a>
+
+            <a href="events-and-conventions.html">
+                <img src="calender-icon.svg" alt="calender">
+                Events & conventions
+            </a>
+
+            <a href="colleagues.html">
+                <img src="three-figures.svg" alt="three-figures">
+                Colleagues
+            </a>
+        </nav>
+        <search>
+            <form action="http://httpbin.org/post">
+                <input type="search" placeholder="search in events">
+                <button type="submit">
+                    <img src="magnifying-glass-icon.svg" alt="magnifying-glass-icon">
+                </button>
+            </form>
+        </search>
+        <button popovertarget="sort-menu">
+            <img src="up-and-down-arrows-icon.svg" alt="up-and-down-arrows-icon">
+        </button>
+        <form popover id="sort-menu" action="http://httpbin.org/post">
+            <p>Sort by:</p>
+            <input type="radio" id="relevancy" name="sort-preference">
+            <label for="relevancy">Relevancy</label>
+            <input type="radio" id="recently added" name="sort-preference">
+            <label for="recently added">Recently added</label>
+            <input type="radio" id="distance" name="sort-preference">
+            <label for="distance">Distance</label>
+            <input type="radio" id="a-z" name="sort-preference">
+            <label for="a-z">A-Z</label>
+            <input type="radio" id="z-a" name="sort-preference">
+            <label for="z-a">Z-A</label>
+        </form>
+        <button popovertarget="filter-menu">
+            <img src="up-and-down-arrows-icon.svg" alt="up-and-down-arrows-icon">
+        </button>
+        <aside popover id="filter-menu">
+            <div>
+                <button popovertarget="filter-menu">
+                    <img src="x-icon.svg" alt="x-icon">
+                </button>
+                <search>
+                    <form action="http://httpbin.org/post-opportunitie">
+                        <input type="search">
+                        <button type="submit">
+                            <img src="magnifying-glass-icon.svg" alt="magnifying-glass-icon">
+                        </button>
+                    </form>
+                </search>
+                <button onclick="alert='Implementation missing'">
+                    <img src="backwards-clock-icon.svg" alt="backwards-clock-icon">
+                    History
+                </button>
+            </div>
+            <form id="role" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Role (33)</summary>
+                    <input type="checkbox" name="role" id="health-professional">
+                    <label for="health-professional">
+                        Health Professional
+                        <button onclick="alert='Implementation missing'">See all roles</button>
+                    </label>
+                    <input type="checkbox" name="role" id="public-health-and-policy">
+                    <label for="public-health-and-policy">
+                        Public Health & Policy
+                        <button onclick="alert='Implementation missing'">See all roles</button>
+                    </label>
+                    <input type="checkbox" name="role" id="research-roles">
+                    <label for="research-roles">
+                        Research Roles
+                        <button onclick="alert='Implementation missing'">See all roles</button>
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                </details>
+            </form>
+            <form id="research-type" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Research type</summary>
+                    <input type="checkbox" name="research-type" id="clinical">
+                    <label for="clinical">
+                        Clinical
+                    </label>
+                    <input type="checkbox" name="research-type" id="fundamental">
+                    <label for="fundamental">
+                        Fundamental
+                    </label>
+                    <input type="checkbox" name="research-type" id="medical">
+                    <label for="medical">
+                        Medical
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                </details>
+            </form>
+            <form id="sub-specialism" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Sub(specialism) (39)</summary>
+                    <input type="checkbox" name="sub-specialism" id="adolescent-medicine">
+                    <label for="adolescent-medicine">
+                        Adolescent medicine
+                    </label>
+                    <input type="checkbox" name="sub-specialism" id="anesthesiology">
+                    <label for="anesthesiology">
+                        Anesthesiology
+                    </label>
+                    <input type="checkbox" name="sub-specialism" id="bioinformatics">
+                    <label for="bioinformatics">
+                        Bioinformatics
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                    <button onclick="alert='Implementation missing'">
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        see all options
+                    </button>
+                </details>
+            </form>
+            <form id="hospital-or-research-institute" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Sub(specialism) (39)</summary>
+                    <input type="checkbox" name="hospital-or-research-institute" id="admiraal-deruyter-hospital">
+                    <label for="admiraal-deruyter-hospital">
+                        Admiraal De Ruyter Hospital
+                    </label>
+                    <input type="checkbox" name="hospital-or-research-institute" id="alrbert-schweitzer-hospital">
+                    <label for="alrbert-schweitzer-hospital">
+                        Albert Schweitzer hospital
+                    </label>
+                    <input type="checkbox" name="hospital-or-research-institute"
+                        id="amalia-childernshospital-radboudumc">
+                    <label for="amalia-childernshospital-radboudumc">
+                        Amalia Childrenshospital (Radboudumc)
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                    <button onclick="alert='Implementation missing'">
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        see all options
+                    </button>
+                </details>
+            </form>
+            <form id="mesh-terms" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Mesh-terms</summary>
+                    <input type="checkbox" name="role" id="anatomy">
+                    <label for="anatomy">
+                        Anatomy
+                        <button onclick="alert='Implementation missing'">See all terms</button>
+                    </label>
+                    <input type="checkbox" name="role"
+                        id="analytical-diagnostic-and-therapeutic-techniques-and-equipment">
+                    <label for="analytical-diagnostic-and-therapeutic-techniques-and-equipment">
+                        Analytical, Diagnostic and Therapeutic Techniques and Equipment
+                        <button onclick="alert='Implementation missing'">See all terms</button>
+                    </label>
+                    <input type="checkbox" name="role" id="anthropology-education-sociology-and-social-phenomena">
+                    <label for="anthropology-education-sociology-and-social-phenomena">
+                        Anthropology, Education, Sociology and Social Phenomena
+                        <button onclick="alert='Implementation missing'">See all terms</button>
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                    <button onclick="alert='Implementation missing'">
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        see all options
+                    </button>
+                </details>
+            </form>
+            <form id="intentions" action="http://httpbin.org/post">
+                <details open>
+                    <summary>Intentions (9)</summary>
+                    <input type="checkbox" name="intentions" id="actively-seeking-collaborators-for-a-specific-project">
+                    <label for="actively-seeking-collaborators-for-a-specific-project">
+                        Actively seeking collaborators for a specific project
+                    </label>
+                    <input type="checkbox" name="intentions" id="looking-for-a-research-intern">
+                    <label for="looking-for-a-research-intern">
+                        Looking for a research intern
+                    </label>
+                    <button type="reset">
+                        Clear filters
+                    </button>
+                    <button onclick="alert='Implementation missing'">
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        see all options
+                    </button>
+                </details>
+            </form>
+            <button onclick="submitColleaguesFilters()">
+                show results
+            </button>
+        </aside>
+        <button>
+            <img src="list-icon.svg" alt="list-icon">
+        </button>
+        <button onclick="alert='Implementation missing'">
+            <img src="cards-icon.svg" alt="cards-icon">
+        </button>
+        <p>345 events</p>
+    </header>
+    <main>
+        <h2>
+            A collection of potential research partners
+        </h2>
+        <p>Browse all active researchers and connect with them. Use filters to refine your search.</p>
+        <p>367 colleagues</p>
+        <article>
+            <a href="/details/colleague-details.html">
+                <main>
+                    <img src="noor-becker.webp" alt="noor-becker">
+                    <button onclick="alert('Implementation missing!')">
+                        <img src="bookmark-icon.svg" alt="bookmark">
+                    </button>
+                    <h3>Noor Becker</h3>
+                    <p>Medical researcher</p>
+                    <p>
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        Surgery (postoperative recover in children)
+                    </p>
+                    <p>
+                        <img src="hospital-icon.svg" alt="hospital-icon">
+                        Admiraal De Ruyter
+                    </p>
+                    <div>
+                        <p>Open to mentoring</p>
+                        <p>Open to case-based discussions</p>
+                    </div>
+                </main>
+            </a>
+        </article>
+        <article>
+            <a href="/details/colleague-details.html">
+                <main>
+                    <blockquote>
+                        I believe small improvements can make a lasting difference and precision matters, even early in
+                        training.
+                    </blockquote>
+                    <img src="ananya-rao.webp" alt="ananya-rao">
+                    <button onclick="alert('Implementation missing!')">
+                        <img src="bookmark-icon.svg" alt="bookmark">
+                    </button>
+                    <h3>Ananya Rao</h3>
+                    <p>Student</p>
+                    <p>
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        Urology
+                    </p>
+                    <p>
+                        <img src="hospital-icon.svg" alt="hospital-icon">
+                        UMC
+                    </p>
+                    <div>
+                        <p>Seeking mentorship</p>
+                    </div>
+                </main>
+            </a>
+        </article>
+        <article>
+            <a href="/details/colleague-details.html">
+                <main>
+                    <blockquote>
+                        Every slide tells a story, if you know how to read it.
+                    </blockquote>
+                    <img src="ahmed-abdirahman.webp" alt="ahmed-abdirahman">
+                    <button onclick="alert('Implementation missing!')">
+                        <img src="bookmark-icon.svg" alt="bookmark">
+                    </button>
+                    <h3>Ahmed Abdirahman</h3>
+                    <p>Doctor</p>
+                    <p>
+                        <img src="plus-icon.svg" alt="plus-icon">
+                        Pathology (standardizing diagnostic reporting in pediatrics)
+                    </p>
+                    <p>
+                        <img src="hospital-icon.svg" alt="hospital-icon">
+                        Wilhelmina Childrenshospital
+                    </p>
+                    <div>
+                        <p>Open to sparring</p>
+                    </div>
+                </main>
+            </a>
+        </article>
+        <div>
+            <p>Loading more colleagues</p>
+            <img src="loading-logo-icon.svg" alt="loading-logo-icon">
+        </div>
+    </main>
+    <aside>
+        <nav>
+            <a href="index.html">
+                <img src="home-icon.svg" alt="home-icon">
+            </a>
+            <button popovertarget="user-menu">
+                <img src="profile-icon.svg" alt="profile-icon">
+            </button>
+            <div popover id="user-menu">
+                <button popovertarget="user-menu">
+                    <img src="x-icon.svg" alt="x-icon">
+                </button>
+                <a href="/user/settings.html">
+                    <img src="kog-icon.svg" alt="kog-icon">
+                    Settings
+                </a>
+                <a href="/user/create-opportunity.html">
+                    <img src="plus-icon.svg" alt="plus-icon">
+                    Create opportunity
+                </a>
+                <a href="/user/profile.html">
+                    <img src="profile-icon.svg" alt="profile-icon">
+                    My profile
+                </a>
+            </div>
+            <a href="/user/chats.html">
+                <img src="speak-bubble-icon.svg" alt="speak-bubble-icon">
+            </a>
+            <a href="/user/notifications.html">
+                <img src="bell-icon.svg" alt="bell-icon">
+            </a>
+        </nav>
+    </aside>
 </body>
+
 </html>
