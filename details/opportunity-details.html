@@ -86,23 +86,29 @@
                 <p>Start with a suggested message and edit it if needed, or write your own.</p>
                 <form action="http://httpbin.org/post">
                     <label for="ask-about-the-project">
-                        <input type="radio" name="show-interest-tab" id="ask-about-the-project">
                         Ask about the project
                     </label>
+                    <input type="radio" name="show-interest-tab" id="ask-about-the-project">
                     <label for="discuss-a-related-topic">
-                        <input type="radio" name="show-interest-tab" id="discuss-a-related-topic">
                         Discuss a related topic
                     </label>
+                    <input type="radio" name="show-interest-tab" id="discuss-a-related-topic">
                     <label for="explore-collaboration">
-                        <input type="radio" name="show-interest-tab" id="explore-collaboration" checked="checked">
                         Explore collaboration
                     </label>
-                    <textarea
-                        name="ask-about-the-project-text">Hi Dr. El Anrabu, I am across your project on improving access to contraceptive care for vulnerable adolescents and would be interested in learning more about your work.</textarea>
-                    <textarea
-                        name="discuss-a-related-topic-text">Hi Dr. El Anrabu, your project caught my ATTENTION AS I'm also interested in research related to adolescent health and preventive care. I'd be happy to exchange thoughts on this topic.</textarea>
-                    <textarea
-                        name="explore-collaboration-text">Hi Dr. El Anrabu, I noticed your project and was wondering if you might be open to connecting or discussing potential collaboration.</textarea>
+                    <input type="radio" name="show-interest-tab" id="explore-collaboration" checked="checked">
+                    <label for="ask-about-the-project-text"></label>
+                    <textarea name="ask-about-the-project-text" id="ask-about-the-project-text">
+                        Hi Dr. El Anrabu, I am across your project on improving access to contraceptive care for vulnerable adolescents and would be interested in learning more about your work.
+                    </textarea>
+                    <label for="discuss-a-related-topic-text"></label>
+                    <textarea name="discuss-a-related-topic-text" id="discuss-a-related-topic-text">
+                        Hi Dr. El Anrabu, your project caught my ATTENTION AS I'm also interested in research related to adolescent health and preventive care. I'd be happy to exchange thoughts on this topic.
+                    </textarea>
+                    <label for="explore-collaboration-text"></label>
+                    <textarea name="explore-collaboration-text" id="explore-collaboration-text">
+                        Hi Dr. El Anrabu, I noticed your project and was wondering if you might be open to connecting or discussing potential collaboration.
+                    </textarea>
                     <button type="submit">
                         Show interest
                         <img src="handshake-icon.svg" alt="handshake-icon">
