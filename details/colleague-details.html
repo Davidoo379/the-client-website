@@ -36,6 +36,170 @@
             </a>
         </nav>
     </header>
+    <main>
+        <h2>Dr. Elise Thompson</h2>
+        <button aria-label="Mutual Interests Popover" popovertarget="mutual-interests">
+            <img src="magnet-icon.svg" alt="magnet-icon">
+        </button>
+        <div popover id="mutual-interests">
+            <section>
+                <button popovertarget="mutual-interests">
+                    <img src="x-icon.svg" alt="x-icon">
+                </button>
+                <img src="magnet-icon.svg" alt="magnet-icon">
+                <h3>Mutual interest</h3>
+                <p>Here's what you have in common</p>
+            </section>
+            <img src="anthony-martina.webp" alt="anthony-martina">
+            <p>you and Elise share a mutual connection: <em>Anthony Martina</em></p>
+            <img src="board-checkmark.svg" alt="board-checkmark">
+            <p>You and Elise both attended the <em>Pediatric Symposium</em> on <time datetime="2025-02-20">20 February
+                    2025</time>.</p>
+
+        </div>
+        <img src="elise-thompson.webp" alt="elise-thompson">
+        <blockquote>
+            Understanding the brain begins with understanding development.
+        </blockquote>
+        <section>
+            <h3>Role:</h3>
+            <p>Medical researcher</p>
+            <h3>Specialism (sub-specialism):</h3>
+            <p>Nerobiology (cognative outcome in childhood)</p>
+            <h3>Years of experience:</h3>
+            <p>15 years</p>
+            <h3>Institution:</h3>
+            <p>Admiraal De Ruyter</p>
+            <a href="linkedin.com">
+                <img src="linkedin-icon.svg" alt="linkedin-icon">
+            </a>
+            <button popovertarget="identifiers">
+                <img src="person-id-card-icon.svg" alt="person-id-card-icon">
+                Identifiers
+            </button>
+            <div popover id="identifiers">
+                <p><em>ORCID:</em> 0000-0002-1825-0097</p>
+                <p><em>BIG registration:</em> 12345678901</p>
+            </div>
+        </section>
+        <section>
+            <h3>Biografie</h3>
+            <p>My work in pediatric neurobiology centers on understanding neurological development and long-term
+                cognitive outcomes. I am currently contributing to research examining early neural markers in
+                developmental disorders. I value cross-disciplinary exchange between laboratory researchers and clinical
+                neurologists.</p>
+            <h3>Mesh terms</h3>
+            <ul class="mesh-terms">
+                <li>Neurobiology</li>
+                <li>Nervous System Diseases</li>
+                <li>Developmental Disabilities</li>
+            </ul>
+            <h3>Intentions</h3>
+            <ul>
+                <li>Open to questions</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Posts</h3>
+            <div>
+                <button>Research projects</button>
+                <button>Internships</button>
+                <button>Open questions</button>
+            </div>
+            <button popovertarget="bookmark-search-form">
+                <img src="magnifying-glass-icon.svg" alt="magnifying-glass-icon">
+            </button>
+            <form action="search" popover id="bookmark-search-form">
+                <label for="bookmark-search">Search in bookmarks:</label>
+                <input type="search" id="bookmark-search" placeholder="search in bookmarks">
+            </form>
+            <button popovertarget="sort-menu">
+                <img src="up-and-down-arrows-icon.svg" alt="up-and-down-arrows-icon">
+            </button>
+            <form popover id="sort-menu" action="http://httpbin.org/post">
+                <p>Sort by:</p>
+                <input type="radio" id="relevancy" name="sort-preference">
+                <label for="relevancy">Relevancy</label>
+                <input type="radio" id="recently-added" name="sort-preference">
+                <label for="recently-added">Recently added</label>
+                <input type="radio" id="distance" name="sort-preference">
+                <label for="distance">Distance</label>
+                <input type="radio" id="a-z" name="sort-preference">
+                <label for="a-z">A-Z</label>
+                <input type="radio" id="z-a" name="sort-preference">
+                <label for="z-a">Z-A</label>
+            </form>
+            <div>
+                <article>
+                    <header>
+                        <p>publisch date: <time datetime="2026-02-02">02-02-2026</time></p>
+                        <button onclick="alert(`Implementation missing!`)">
+                            <img src="bookmark-icon.svg" alt="bookmark">
+                        </button>
+                    </header>
+                    <h3>Improving access to contraceptive care for vulnerable adolescents</h3>
+                    <p>
+                        <img src="speak-bubble-icon.svg" alt="speak-bubble-icon">
+                        20 Comments
+                    </p>
+                    <footer>
+                        <p>Research project</p>
+                    </footer>
+                </article>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <button popovertarget="network-request">
+            Network request
+            <img src="handshake-icon.svg" alt="handshake-icon">
+        </button>
+        <div popover id="show-interest">
+            <button popovertarget="show-interest">
+                <img src="x-icon.svg" alt="x-icon">
+            </button>
+            <p>YOu are about to send connection request to Dr. Elise Thompson</p>
+            <button type="submit" form="send-request-form">Oke, send request</button>
+            <button>Include a message (optional)</button>
+            <section>
+                <h3>Add a message (optional)</h3>
+                <p>Include a shot message to intoduce yourself. Start with a suggested message and edit if if needed, or
+                    write your own.</p>
+                <form id="send-request-form" action="http://httpbin.org/post">
+                    <label for="learning-from-experience">
+                        learning from experience
+                    </label>
+                    <input type="radio" name="show-interest-tab" id="learning-from-experience">
+                    <label for="knowledge-exchange">
+                        Knowledge exchange
+                    </label>
+                    <input type="radio" name="show-interest-tab" id="knowledge-exchange">
+                    <label for="professional-connection">
+                        Professional connection
+                    </label>
+                    <input type="radio" name="show-interest-tab" id="professional-connection" checked="checked">
+                    <label for="learning-from-experience-text"></label>
+                    <textarea name="learning-from-experience-text" id="learning-from-experience-text">
+                    Dear, Dr. Elise Thompson, I noticed your experience in pediatric and reproductive health. I would enjoy connecting and learning more about your perspective and work in this field.
+                </textarea>
+                    <label for="knowledge-exchange-text"></label>
+                    <textarea name="knowledge-exchange-text" id="knowledge-exchange-text">
+                        Dear, Dr. Elise Thompson, I came across your profile and noticed your work in adolescent heath and reproductive vare, I'd be interested in connection and exchanging perspectives on the area.
+                    </textarea>
+                    <label for="professional-connection-text"></label>
+                    <textarea name="professional-connection-text" id="professional-connection-text">
+                   Dear, Dr. Elise Thompson, your clinical and research focus on adolescent health caught my attention. I'd appreciate the opportunity to connect and stay in touch around related topics.
+                </textarea>
+                </form>
+            </section>
+        </div>
+        <button onclick="alert(`Implementation missing!`)">
+            <img src="bookmark-icon.svg" alt="bookmark">
+        </button>
+        <button onclick="alert(`Implementation missing!`)">
+            <img src="dot-network.svg" alt="dot-network">
+        </button>
+    </aside>
 </body>
 
 </html>
