@@ -1,1 +1,166 @@
-/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=TASA+Orbiter:wght@400..800&display=swap');
+
+:root {
+    /* colors */
+    --base-xivier-blue: #66b3df;
+    --base-cockatoo: #66c7b4;
+    --base-lustful-wishes: #d6439f;
+    --base-night-rider: #322f2f;
+    --base-bleached-silk: #f2f2f2;
+    --base-eclipse: #3f3b3b;
+
+    /* xavier-blue darker shades */
+    --d100-xavier-blue: #5ca1c9;
+    --d200-xavier-blue: #528fb2;
+    --d300-xavier-blue: #477d9c;
+    --d400-xavier-blue: #3d6b86;
+    --d500-xavier-blue: #335a70;
+    --d600-xavier-blue: #294859;
+    --d700-xavier-blue: #1f3643;
+    --d800-xavier-blue: #14242d;
+    --d900-xavier-blue: #0a1216;
+
+    /* xavier-blue lighter shades */
+    --l100-xavier-blue: #75bbe2;
+    --l200-xavier-blue: #85c2e5;
+    --l300-xavier-blue: #94cae9;
+    --l400-xavier-blue: #a3d1ec;
+    --l500-xavier-blue: #b3d9ef;
+    --l600-xavier-blue: #c2e1f2;
+    --l700-xavier-blue: #d1e8f5;
+    --l800-xavier-blue: #e0f0f9;
+    --l900-xavier-blue: #f0f7fc;
+
+    /* cockatoo darker shades */
+    --d100-cockatoo: #5cb3a2;
+    --d200-cockatoo: #529f90;
+    --d300-cockatoo: #478b7e;
+    --d400-cockatoo: #3d776c;
+    --d500-cockatoo: #33645a;
+    --d600-cockatoo: #295048;
+    --d700-cockatoo: #1f3c36;
+    --d800-cockatoo: #142824;
+    --d900-cockatoo: #0a1412;
+
+    /* cockatoo lighter shades */
+    --l100-cockatoo: #75cdbc;
+    --l200-cockatoo: #85d2c3;
+    --l300-cockatoo: #94d8cb;
+    --l400-cockatoo: #a3ddd2;
+    --l500-cockatoo: #b3e3da;
+    --l600-cockatoo: #c2e9e1;
+    --l700-cockatoo: #d1eee9;
+    --l800-cockatoo: #e0f4f0;
+    --l900-cockatoo: #f0f9f8;
+
+    /* lustful-wishes darker shades */
+    --d100-lustful-wishes: #c13c8f;
+    --d200-lustful-wishes: #ab367f;
+    --d300-lustful-wishes: #962f6f;
+    --d400-lustful-wishes: #80285f;
+    --d500-lustful-wishes: #6b2250;
+    --d600-lustful-wishes: #561b40;
+    --d700-lustful-wishes: #401430;
+    --d800-lustful-wishes: #2b0d20;
+    --d900-lustful-wishes: #150710;
+
+    /* lustful-wishes lighter shades */
+    --l100-lustful-wishes: #da56a9;
+    --l200-lustful-wishes: #de69b2;
+    --l300-lustful-wishes: #e27bbc;
+    --l400-lustful-wishes: #e68ec5;
+    --l500-lustful-wishes: #eba1cf;
+    --l600-lustful-wishes: #efb4d9;
+    --l700-lustful-wishes: #f3c7e2;
+    --l800-lustful-wishes: #f7d9ec;
+    --l900-lustful-wishes: #fbecf5;
+
+    /* night rider darker shades */
+    --d100-night-rider: #2d2a2a;
+    --d200-night-rider: #282626;
+    --d300-night-rider: #232121;
+    --d400-night-rider: #1e1c1c;
+    --d500-night-rider: #191818;
+    --d600-night-rider: #141313;
+    --d700-night-rider: #0f0e0e;
+    --d800-night-rider: #0a0909;
+    --d900-night-rider: #050505;
+
+    /* night rider lighter shades */
+    --l100-night-rider: #474444;
+    --l200-night-rider: #5b5959;
+    --l300-night-rider: #706d6d;
+    --l400-night-rider: #848282;
+    --l500-night-rider: #999797;
+    --l600-night-rider: #adacac;
+    --l700-night-rider: #c2c1c1;
+    --l800-night-rider: #d6d5d5;
+    --l900-night-rider: #ebeaea;
+
+    /* bleached silk darker shades */
+    --d100-bleached-silk: #dadada;
+    --d200-bleached-silk: #c2c2c2;
+    --d300-bleached-silk: #a9a9a9;
+    --d400-bleached-silk: #919191;
+    --d500-bleached-silk: #797979;
+    --d600-bleached-silk: #616161;
+    --d700-bleached-silk: #494949;
+    --d800-bleached-silk: #303030;
+    --d900-bleached-silk: #181818;
+
+    /* bleached silk lighter shades */
+    --l100-bleached-silk: #f3f3f3;
+    --l200-bleached-silk: #f5f5f5;
+    --l300-bleached-silk: #f6f6f6;
+    --l400-bleached-silk: #f7f7f7;
+    --l500-bleached-silk: #f9f9f9;
+    --l600-bleached-silk: #fafafa;
+    --l700-bleached-silk: #fbfbfb;
+    --l800-bleached-silk: #fcfcfc;
+    --l900-bleached-silk: #fefefe;
+
+    /* eclipse darker shades */
+    --d100-eclipse: #393535;
+    --d200-eclipse: #322f2f;
+    --d300-eclipse: #2c2929;
+    --d400-eclipse: #262323;
+    --d500-eclipse: #201e1e;
+    --d600-eclipse: #191818;
+    --d700-eclipse: #131212;
+    --d800-eclipse: #0d0c0c;
+    --d900-eclipse: #060606;
+
+    /* eclipse silk lighter shades */
+    --l100-eclipse: #524f4f;
+    --l200-eclipse: #656262;
+    --l300-eclipse: #797676;
+    --l400-eclipse: #8c8989;
+    --l500-eclipse: #9f9d9d;
+    --l600-eclipse: #b2b1b1;
+    --l700-eclipse: #c5c4c4;
+    --l800-eclipse: #d9d8d8;
+    --l900-eclipse: #ecebeb;
+
+    /* others */
+    --tasa-orbiter: "TASA Orbiter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '"';
+}
