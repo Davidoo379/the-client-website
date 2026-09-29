@@ -146,16 +146,17 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    font-family: var(--tasa-orbiter);
 }
 
 ol,
 ul {
-    list-style: none;
+    list-style-type: "";
 }
 
 blockquote:before,
