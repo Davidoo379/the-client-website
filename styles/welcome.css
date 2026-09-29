@@ -1,0 +1,58 @@
+main section:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        padding-top: 1rem;
+        text-align: center;
+        font-weight: 400;
+        font-size: 22px;
+        color: var(--d700-bleached-silk);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+
+        a {
+            flex-basis: 40%;
+            flex-grow: 2;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--d700-bleached-silk);
+            box-shadow: 0px 4px 0px var(--l600-night-rider);
+            translate: 0px -4px;
+            transition: 0.1s;
+        }
+
+        a:hover,
+        a:focus-visible {
+            box-shadow: 0px 6px 0px var(--l500-night-rider);
+            translate: 0px -6px;
+        }
+
+        a:Active {
+            box-shadow: 0px 0px 0px var(--l500-night-rider);
+            translate: 0px 0px;
+        }
+
+        a:nth-of-type(1) {
+            background-color: var(--l600-lustful-wishes);
+        }
+
+        a:nth-of-type(2) {
+            background-color: var(--l600-cockatoo);
+        }
+
+        a:nth-of-type(3) {
+            background-color: var(--l600-xavier-blue);
+        }
+    }
+
+}

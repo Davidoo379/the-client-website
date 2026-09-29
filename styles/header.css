@@ -44,9 +44,8 @@ nav[popover]:popover-open {
     a {
         display: flex;
         color: var(--d600-bleached-silk);
-        text-decoration: none;
         align-items: center;
-        border-radius: 0.3rem;
+        border-radius: 20px;
         padding-left: 0.5rem;
     }
 

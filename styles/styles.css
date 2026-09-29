@@ -165,3 +165,7 @@ q:before,
 q:after {
     content: '"';
 }
+
+a {
+    text-decoration: none;
+}
