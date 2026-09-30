@@ -5,20 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        (async () => {
-            const res = await fetch('test.html');
-            res.body
+    <script type="module">
+        const files = ['test.html', 'test2.html'];
+
+        // Start all downloads at once
+        const responses = await Promise.all(files.map(f => fetch(f)));
+
+        // Stream them into the page one at a time, in order
+        for (const res of responses) {
+            if (!res.ok) {
+                console.error('Failed to load', res.url, res.status);
+                continue;
+            }
+            await res.body
                 .pipeThrough(new TextDecoderStream())
                 .pipeTo(document.body.streamAppendHTMLUnsafe());
-        })();
+        }
     </script>
 </head>
 
 <body>
     <section>
         <?start name="footer-slot">Loading footer…<?end>
-        <?start name="footer-slot2">Loading footer…<?end>
     </section>
 
 </body>
