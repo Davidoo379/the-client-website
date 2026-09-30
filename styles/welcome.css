@@ -29,6 +29,8 @@ main section:nth-of-type(1) {
             box-shadow: 0px 4px 0px var(--l600-night-rider);
             translate: 0px -4px;
             transition: 0.1s;
+            text-align: center;
+            text-justify: center;
         }
 
         a:hover,
@@ -37,8 +39,8 @@ main section:nth-of-type(1) {
             translate: 0px -6px;
         }
 
-        a:Active {
-            box-shadow: 0px 0px 0px var(--l500-night-rider);
+        a:active {
+            box-shadow: 0px 0px 0px var(--l600-night-rider);
             translate: 0px 0px;
         }
 

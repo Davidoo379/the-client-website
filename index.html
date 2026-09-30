@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/welcome.css">
+    <link rel="stylesheet" href="./styles/dashboard-sections.css">
     <script src="scripts/script.js" defer></script>
 </head>
 
@@ -101,21 +102,28 @@
         <section>
             <h2>Recommend for you</h2>
             <p>Projects, questions and colleagues selected based on your preferences</p>
-            <select name="recommended-filter" id="recommended-filter">
-                <option value="show-all-content">Show all content</option>
-                <option value="colleagues">Colleagues</option>
-                <option value="opportunities">Opportunities</option>
-                <option value="open-questions">Open questions</option>
-                <option value="events">Events</option>
-            </select>
-            <button onclick="alert='Implementation missing'" popovertarget="refresh-popover-menu">
-                <img src="arrow-circle.svg" alt="arrow-circle">
-            </button>
+            <div>
+                <select name="recommended-filter" id="recommended-filter">
+                    <option value="show-all-content">Show all content</option>
+                    <option value="colleagues">Colleagues</option>
+                    <option value="opportunities">Opportunities</option>
+                    <option value="open-questions">Open questions</option>
+                    <option value="events">Events</option>
+                </select>
+                <button onclick="alert='Implementation missing'" popovertarget="refresh-popover-menu">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.0808 12.0236C17.1755 12.0236 13.144 15.7716 12.7511 20.5501H11.7678C11.6156 20.55 11.4669 20.5952 11.3405 20.6798C11.2141 20.7644 11.1156 20.8847 11.0577 21.0254C10.9998 21.1661 10.9851 21.3209 11.0153 21.47C11.0455 21.6191 11.1194 21.7558 11.2275 21.8629L12.9465 23.5676C13.0902 23.71 13.2844 23.79 13.4868 23.79C13.6892 23.79 13.8833 23.71 14.0271 23.5676L15.7461 21.8629C15.8542 21.7558 15.9281 21.6191 15.9583 21.47C15.9885 21.3209 15.9737 21.1661 15.9158 21.0254C15.8579 20.8847 15.7595 20.7644 15.6331 20.6798C15.5067 20.5952 15.3579 20.55 15.2058 20.5501H14.2921C14.6809 16.6301 18.0145 13.5584 22.0808 13.5584C23.4215 13.5558 24.7404 13.8971 25.9114 14.5498C27.0825 15.2024 28.0666 16.1445 28.7696 17.286C28.8211 17.3746 28.8897 17.452 28.9715 17.5136C29.0534 17.5752 29.1467 17.6198 29.246 17.6448C29.3454 17.6698 29.4487 17.6747 29.5499 17.6591C29.6512 17.6435 29.7483 17.6078 29.8355 17.5541C29.9227 17.5005 29.9983 17.4298 30.0579 17.3465C30.1174 17.2631 30.1596 17.1687 30.182 17.0687C30.2045 16.9688 30.2067 16.8653 30.1885 16.7645C30.1703 16.6637 30.1322 16.5676 30.0763 16.4817C29.236 15.1172 28.0599 13.9909 26.6603 13.2104C25.2607 12.4299 23.6833 12.0213 22.0808 12.0236ZM31.0463 20.4314C30.9027 20.2895 30.7089 20.21 30.5071 20.21C30.3052 20.21 30.1115 20.2895 29.9678 20.4314L28.2416 22.1361C28.1332 22.243 28.0591 22.3797 28.0286 22.5289C27.9981 22.6781 28.0127 22.833 28.0706 22.9739C28.1284 23.1147 28.2268 23.2352 28.3533 23.32C28.4798 23.4047 28.6286 23.45 28.7809 23.4499H29.7008C29.3099 27.3688 25.965 30.4416 21.8793 30.4416C20.5344 30.445 19.2111 30.1042 18.0352 29.4515C16.8594 28.7989 15.8702 27.8561 15.1618 26.7129C15.1089 26.6271 15.0395 26.5526 14.9578 26.4936C14.876 26.4346 14.7835 26.3923 14.6854 26.369C14.5873 26.3458 14.4856 26.3421 14.386 26.3582C14.2865 26.3743 14.1911 26.4098 14.1053 26.4628C13.9321 26.5697 13.8084 26.7411 13.7614 26.9392C13.7145 27.1373 13.7482 27.346 13.8552 27.5192C14.7011 28.8852 15.8826 30.0119 17.2871 30.7921C18.6917 31.5723 20.2726 31.98 21.8793 31.9764C26.7989 31.9764 30.8478 28.2314 31.2417 23.4499H32.2322C32.3845 23.45 32.5333 23.4047 32.6598 23.32C32.7863 23.2352 32.8847 23.1147 32.9425 22.9739C33.0003 22.833 33.0149 22.6781 32.9845 22.5289C32.954 22.3797 32.8799 22.243 32.7714 22.1361L31.0463 20.4314Z"
+                            fill="#322F2F" />
+                    </svg>
+
+                </button>
+            </div>
             <div popover id="refresh-popover-menu">
                 <a href="#">Refresh the suggestion</a>
                 <a href="/user/settings.html/#feed-prefrences">Change your preferences</a>
             </div>
-            <div>
+            <div class="vertical-carousel">
                 <article>
                     <a href="/details/opportunity-details.html">Open Card</a>
                     <header>
@@ -300,22 +308,25 @@
         </section>
         <section>
             <h2>Your booked marked content</h2>
-            <select name="bookmark-filter" id="bookmark-filter">
-                <option value="show-all-content">Show all content</option>
-                <option value="colleagues">Colleagues</option>
-                <option value="opportunities">Opportunities</option>
-                <option value="open-questions">Open questions</option>
-                <option value="events">Events</option>
-            </select>
-            <search>
-                <button popovertarget="bookmark-search-form">
-                    <img src="magnifying-glass-icon.svg" alt="magnifying-glass-icon">
-                </button>
-                <form action="search" popover id="bookmark-search-form">
-                    <label for="bookmark-search">Search in bookmarks:</label>
-                    <input type="search" id="bookmark-search" placeholder="search in bookmarks">
-                </form>
-            </search>
+            <div>
+                <select name="bookmark-filter" id="bookmark-filter">
+                    <option value="show-all-content">Show all content</option>
+                    <option value="colleagues">Colleagues</option>
+                    <option value="opportunities">Opportunities</option>
+                    <option value="open-questions">Open questions</option>
+                    <option value="events">Events</option>
+                </select>
+
+                <search>
+                    <button popovertarget="bookmark-search-form">
+                        <img src="magnifying-glass-icon.svg" alt="magnifying-glass-icon">
+                    </button>
+                    <form action="search" popover id="bookmark-search-form">
+                        <label for="bookmark-search">Search in bookmarks:</label>
+                        <input type="search" id="bookmark-search" placeholder="search in bookmarks">
+                    </form>
+                </search>
+            </div>
             <div>
                 <article>
                     <a href="/details/colleague-details.html">Open Card</a>

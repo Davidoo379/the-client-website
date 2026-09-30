@@ -154,6 +154,10 @@
     font-family: var(--tasa-orbiter);
 }
 
+html {
+    background-color: var(--base-bleached-silk);
+}
+
 ol,
 ul {
     list-style-type: "";
