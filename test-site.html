@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        (async () => {
+            const res = await fetch('test.html');
+            res.body
+                .pipeThrough(new TextDecoderStream())
+                .pipeTo(document.body.streamAppendHTMLUnsafe());
+        })();
+    </script>
+</head>
+
+<body>
+    <section>
+        <?start name="footer-slot">Loading footer…<?end>
+        <?start name="footer-slot2">Loading footer…<?end>
+    </section>
+
+</body>
+
+</html>
