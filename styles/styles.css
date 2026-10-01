@@ -143,6 +143,7 @@
 
     /* others */
     --tasa-orbiter: "TASA Orbiter", sans-serif;
+    --white: #FFFFFF;
 }
 
 * {
@@ -172,4 +173,9 @@ q:after {
 
 a {
     text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
 }

@@ -1,0 +1,185 @@
+<template id="card-template">
+    <article class="project-card">
+        <a href="/details/opportunity-details.html">Open Card</a>
+        <header>
+            <cite>
+                <span class="name"></span>
+                <span class="role"></span>
+            </cite>
+            <div class="card-buttons">
+                <button onclick="alert(`Implementation missing!`)">
+                    <svg title="bookmark" width="17" height="20" viewBox="0 0 17 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.24549 17.6689L3.2982 19.7892C2.51291 20.1229 1.76689 20.0593 1.06014 19.5984C0.353378 19.1374 0 18.4844 0 17.6395V2.35586C0 1.708 0.230874 1.15358 0.692621 0.692622C1.15437 0.231659 1.70878 0.000785285 2.35586 0H14.1351C14.783 0 15.3378 0.230874 15.7995 0.692622C16.2613 1.15437 16.4918 1.70878 16.491 2.35586V17.6395C16.491 18.4837 16.1376 19.1366 15.4309 19.5984C14.7241 20.0601 13.9781 20.1237 13.1928 19.7892L8.24549 17.6689ZM8.24549 15.0775L14.1351 17.61V2.35586H2.35586V17.61L8.24549 15.0775ZM8.24549 2.35586H2.35586H14.1351H8.24549Z"
+                            fill="#A9A9A9" />
+                    </svg>
+
+                </button>
+                <button popovertarget="opportunity-card-options-1">
+                    <svg title="card options" width="6" height="24" viewBox="0 0 6 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2.93359" cy="5.125" r="2" fill="#C2C2C2" />
+                        <circle cx="2.93359" cy="12.125" r="2" fill="#C2C2C2" />
+                        <ellipse cx="2.93359" cy="19" rx="2" ry="1.875" fill="#C2C2C2" />
+                    </svg>
+
+                </button>
+                <div popover id="opportunity-card-options-1">
+                    <a href="./user/settings.html#feed">
+                        <img src="questionmark-icon.svg" alt="">
+                        Why was this suggested?
+                    </a>
+                    <button onclick="alert(`Implementation missing!`)">
+                        <img src="thumbs-down-icon.svg" alt="">
+                        Show less content from this user
+                    </button>
+                    <button onclick="alert(`Implementation missing!`)">
+                        <img src="thumbs-up-icon.svg" alt="">
+                        Show more content from this user
+                    </button>
+                    <button onclick="alert(`Implementation missing!`)">
+                        <img src="waringsign-icon.svg" alt="">
+                        Report issues
+                    </button>
+                </div>
+            </div>
+        </header>
+        <h3 class="title"></h3>
+        <div class="meshTerms">
+        </div>
+        <footer class="cardTags">
+
+        </footer>
+    </article>
+</template>
+
+<template id="profile-card-template">
+    <article class="profile-card">
+        <a href="/details/colleague-details.html">Open Card</a>
+        <img class="profileImage" alt="">
+        <div class="card-buttons">
+            <button onclick="alert(`Implementation missing!`)">
+                <svg title="bookmark" width="17" height="20" viewBox="0 0 17 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.24549 17.6689L3.2982 19.7892C2.51291 20.1229 1.76689 20.0593 1.06014 19.5984C0.353378 19.1374 0 18.4844 0 17.6395V2.35586C0 1.708 0.230874 1.15358 0.692621 0.692622C1.15437 0.231659 1.70878 0.000785285 2.35586 0H14.1351C14.783 0 15.3378 0.230874 15.7995 0.692622C16.2613 1.15437 16.4918 1.70878 16.491 2.35586V17.6395C16.491 18.4837 16.1376 19.1366 15.4309 19.5984C14.7241 20.0601 13.9781 20.1237 13.1928 19.7892L8.24549 17.6689ZM8.24549 15.0775L14.1351 17.61V2.35586H2.35586V17.61L8.24549 15.0775ZM8.24549 2.35586H2.35586H14.1351H8.24549Z"
+                        fill="#A9A9A9" />
+                </svg>
+
+            </button>
+            <button popovertarget="opportunity-card-options-1">
+                <svg title="card options" width="6" height="24" viewBox="0 0 6 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2.93359" cy="5.125" r="2" fill="#C2C2C2" />
+                    <circle cx="2.93359" cy="12.125" r="2" fill="#C2C2C2" />
+                    <ellipse cx="2.93359" cy="19" rx="2" ry="1.875" fill="#C2C2C2" />
+                </svg>
+
+            </button>
+            <div popover id="opportunity-card-options-1">
+                <a href="./user/settings.html#feed">
+                    <img src="questionmark-icon.svg" alt="">
+                    Why was this suggested?
+                </a>
+                <button onclick="alert(`Implementation missing!`)">
+                    <img src="thumbs-down-icon.svg" alt="">
+                    Show less content from this user
+                </button>
+                <button onclick="alert(`Implementation missing!`)">
+                    <img src="thumbs-up-icon.svg" alt="">
+                    Show more content from this user
+                </button>
+                <button onclick="alert(`Implementation missing!`)">
+                    <img src="waringsign-icon.svg" alt="">
+                    Report issues
+                </button>
+            </div>
+        </div>
+        <h3 class="name"></h3>
+        <p class="role"></p>
+        <p>
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M5.89244 0C5.46623 0 5.05747 0.169311 4.7561 0.470688C4.45472 0.772064 4.28541 1.18082 4.28541 1.60703V4.28648H1.60703C1.18082 4.28648 0.772064 4.45579 0.470688 4.75717C0.169311 5.05854 0 5.4673 0 5.89351L0 9.10756C0 9.53378 0.169311 9.94253 0.470688 10.2439C0.772064 10.5453 1.18082 10.7146 1.60703 10.7146H4.28541V13.393C4.28541 13.8192 4.45472 14.2279 4.7561 14.5293C5.05747 14.8307 5.46623 15 5.89244 15H9.10649C9.5327 15 9.94146 14.8307 10.2428 14.5293C10.5442 14.2279 10.7135 13.8192 10.7135 13.393V10.7146H13.3919C13.8181 10.7146 14.2269 10.5453 14.5282 10.2439C14.8296 9.94253 14.9989 9.53378 14.9989 9.10756V5.89351C14.9989 5.4673 14.8296 5.05854 14.5282 4.75717C14.2269 4.45579 13.8181 4.28648 13.3919 4.28648H10.7135V1.60703C10.7135 1.18082 10.5442 0.772064 10.2428 0.470688C9.94146 0.169311 9.5327 0 9.10649 0L5.89244 0Z"
+                    fill="#494949" />
+            </svg>
+
+            <span class="subSpecialism"></span>
+        </p>
+        <p>
+            <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21 16.5H20.25V9C20.25 8.60218 20.092 8.22064 19.8107 7.93934C19.5294 7.65804 19.1478 7.5 18.75 7.5H13.5V1.5C13.5 1.10218 13.342 0.720644 13.0607 0.43934C12.7794 0.158035 12.3978 0 12 0H3C2.60218 0 2.22064 0.158035 1.93934 0.43934C1.65804 0.720644 1.5 1.10218 1.5 1.5V16.5H0.75C0.551088 16.5 0.360322 16.579 0.21967 16.7197C0.0790176 16.8603 0 17.0511 0 17.25C0 17.4489 0.0790176 17.6397 0.21967 17.7803C0.360322 17.921 0.551088 18 0.75 18H21C21.1989 18 21.3897 17.921 21.5303 17.7803C21.671 17.6397 21.75 17.4489 21.75 17.25C21.75 17.0511 21.671 16.8603 21.5303 16.7197C21.3897 16.579 21.1989 16.5 21 16.5ZM18.75 9V16.5H13.5V9H18.75ZM3 1.5H12V16.5H10.5V12C10.5 11.8011 10.421 11.6103 10.2803 11.4697C10.1397 11.329 9.94891 11.25 9.75 11.25H5.25C5.05109 11.25 4.86032 11.329 4.71967 11.4697C4.57902 11.6103 4.5 11.8011 4.5 12V16.5H3V1.5ZM9 16.5H6V12.75H9V16.5ZM4.5 6C4.5 5.80109 4.57902 5.61032 4.71967 5.46967C4.86032 5.32902 5.05109 5.25 5.25 5.25H6.75V3.75C6.75 3.55109 6.82902 3.36032 6.96967 3.21967C7.11032 3.07902 7.30109 3 7.5 3C7.69891 3 7.88968 3.07902 8.03033 3.21967C8.17098 3.36032 8.25 3.55109 8.25 3.75V5.25H9.75C9.94891 5.25 10.1397 5.32902 10.2803 5.46967C10.421 5.61032 10.5 5.80109 10.5 6C10.5 6.19891 10.421 6.38968 10.2803 6.53033C10.1397 6.67098 9.94891 6.75 9.75 6.75H8.25V8.25C8.25 8.44891 8.17098 8.63968 8.03033 8.78033C7.88968 8.92098 7.69891 9 7.5 9C7.30109 9 7.11032 8.92098 6.96967 8.78033C6.82902 8.63968 6.75 8.44891 6.75 8.25V6.75H5.25C5.05109 6.75 4.86032 6.67098 4.71967 6.53033C4.57902 6.38968 4.5 6.19891 4.5 6Z"
+                    fill="#494949" />
+            </svg>
+
+            <span class="institute"></span>
+        </p>
+        <div class="meshTerms">
+        </div>
+    </article>
+</template>
+
+<template id="event-card-template">
+    <article class="event-card">
+        <a href="/details/event-details.html">Open Card</a>
+        <header>
+            <div class="card-buttons">
+                <button onclick="alert(`Implementation missing!`)">
+                    <svg title="bookmark" width="17" height="20" viewBox="0 0 17 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.24549 17.6689L3.2982 19.7892C2.51291 20.1229 1.76689 20.0593 1.06014 19.5984C0.353378 19.1374 0 18.4844 0 17.6395V2.35586C0 1.708 0.230874 1.15358 0.692621 0.692622C1.15437 0.231659 1.70878 0.000785285 2.35586 0H14.1351C14.783 0 15.3378 0.230874 15.7995 0.692622C16.2613 1.15437 16.4918 1.70878 16.491 2.35586V17.6395C16.491 18.4837 16.1376 19.1366 15.4309 19.5984C14.7241 20.0601 13.9781 20.1237 13.1928 19.7892L8.24549 17.6689ZM8.24549 15.0775L14.1351 17.61V2.35586H2.35586V17.61L8.24549 15.0775ZM8.24549 2.35586H2.35586H14.1351H8.24549Z"
+                            fill="#A9A9A9" />
+                    </svg>
+
+                </button>
+                <button popovertarget="opportunity-card-options-1">
+                    <svg title="card options" width="6" height="24" viewBox="0 0 6 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2.93359" cy="5.125" r="2" fill="#C2C2C2" />
+                        <circle cx="2.93359" cy="12.125" r="2" fill="#C2C2C2" />
+                        <ellipse cx="2.93359" cy="19" rx="2" ry="1.875" fill="#C2C2C2" />
+                    </svg>
+
+                </button>
+                <div popover id="opportunity-card-options-1">
+                    <a href="./user/settings.html#feed">
+                        <img src="questionmark-icon.svg" alt="">
+                        Why was this suggested?
+                    </a>
+                    <button onclick="alert(`Implementation missing!`)">
+                        <img src="thumbs-down-icon.svg" alt="">
+                        Show less content from this user
+                    </button>
+                    <button onclick="alert(`Implementation missing!`)">
+                        <img src="thumbs-up-icon.svg" alt="">
+                        Show more content from this user
+                    </button>
+                    <button onclick="alert(`Implementation missing!`)">
+                        <img src="waringsign-icon.svg" alt="">
+                        Report issues
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <time class="date">
+            <span class="dateShort"></span>
+            <span class="weekday"></span>
+        </time>
+
+        <p><span>Location:</span> <span class="location"></span></p>
+
+        <p>
+            Time: <time class="startTime"> </time> - <time class="endTime"></time>
+        </p>
+        <p>Organizer: <span class="organizer"></span></p>
+        <h3 class="title"></h3>
+        <p><span class="attendees"></span> colleagues plan to attend</p>
+
+        <footer class="cardTags">
+        </footer>
+    </article>
+</template>

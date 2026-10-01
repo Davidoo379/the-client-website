@@ -8,28 +8,12 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/welcome.css">
+    <link rel="stylesheet" href="./styles/aside-bar.css">
+    <link rel="stylesheet" href="./styles/unitilities.css">
+    <link rel="stylesheet" href="./styles/card.css">
     <link rel="stylesheet" href="./styles/dashboard-sections.css">
     <script src="scripts/script.js" defer></script>
-
-    <script type="module">
-        const files = [
-            './template-html/header-blueprint.html',
-            './template-html/dashboard-content.html'];
-
-        // Start all downloads at once
-        const responses = await Promise.all(files.map(f => fetch(f)));
-
-        // Stream them into the page one at a time, in order
-        for (const res of responses) {
-            if (!res.ok) {
-                console.error('Failed to load', res.url, res.status);
-                continue;
-            }
-            await res.body
-                .pipeThrough(new TextDecoderStream())
-                .pipeTo(document.body.streamAppendHTMLUnsafe());
-        }
-    </script>
+    <script type="module" src="./scripts/dash-board.js" defer></script>
 </head>
 
 <body>
@@ -70,185 +54,7 @@
                 <a href="#">Refresh the suggestion</a>
                 <a href="/user/settings.html/#feed-prefrences">Change your preferences</a>
             </div>
-            <div class="vertical-carousel">
-                <article>
-                    <a href="/details/opportunity-details.html">Open Card</a>
-                    <header>
-                        <cite>
-                            <span>Anthony Martina</span>
-                            Medival researcher
-                        </cite>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="bookmark-icon.svg" alt="bookmark">
-                        </button>
-                        <button popovertarget="opportunity-card-options-1">
-                            <img src="vertical-dots-icon.svg" alt="card options">
-                        </button>
-                        <div popover id="opportunity-card-options-1">
-                            <a href="./user/settings.html#feed">
-                                <img src="questionmark-icon.svg" alt="">
-                                Why was this suggested?
-                            </a>
-                            <button onclick="alert(`Implementation missing!`)">
-                                <img src="thumbs-down-icon.svg" alt="">
-                                Show less content from this user
-                            </button>
-                            <button onclick="alert(`Implementation missing!`)">
-                                <img src="thumbs-up-icon.svg" alt="">
-                                Show more content from this user
-                            </button>
-                            <button onclick="alert(`Implementation missing!`)">
-                                <img src="waringsign-icon.svg" alt="">
-                                Report issues
-                            </button>
-                        </div>
-                    </header>
-                    <h3>From Data to Decisions: Improving Clinical Insight Through Pediatric care</h3>
-                    <div>
-                        <p>Data Interpretation</p>
-                        <p>Clinical Decision-Making</p>
-                        <p>Outcome Assessment (Health Care)</p>
-                    </div>
-                    <footer>
-                        <p>Project</p>
-                        <p>Internship</p>
-                    </footer>
-                </article>
-                <article>
-                    <a href="/details/colleague-details.html">Open Card</a>
-                    <img src="elise-thompson.webp" alt=">
-                    <button onclick=" alert(`Implementation missing!`)">
-                    <img src="bookmark-icon.svg" alt="bookmark">
-                    </button>
-                    <button popovertarget="opportunity-card-options-2">
-                        <img src="vertical-dots-icon.svg" alt="card options">
-                    </button>
-                    <div popover id="opportunity-card-options-2">
-                        <a href="./user/settings.html#feed">
-                            <img src="questionmark-icon.svg" alt="">
-                            Why was this suggested?
-                        </a>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="thumbs-down-icon.svg" alt="t">
-                            Show less content from this user
-                        </button>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="thumbs-up-icon.svg" alt="">
-                            Show more content from this user
-                        </button>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="waringsign-icon.svg" alt="">
-                            Report issues
-                        </button>
-                    </div>
-                    <h3>Elise Thompson</h3>
-                    <p>Doctor</p>
-                    <p>
-                        <img src="plus-icon.svg" alt="">
-                        Neurobiology (cognitive outcomes in childhood)
-                    </p>
-                    <p>
-                        <img src="hospital-icon.svg" alt="">
-                        Admiraal De Ruyter
-                    </p>
-                    <div>
-                        <p>Open to questions</p>
-                    </div>
-                </article>
-                <article>
-                    <a href="/details/open-question-details.html">Open Card</a>
-                    <header>
-                        <cite>
-                            <span>Noor Becker</span>
-                            Medival researcher
-                        </cite>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="bookmark-icon.svg" alt="bookmark">
-                        </button>
-                        <button popovertarget="opportunity-card-options-3">
-                            <img src="vertical-dots-icon.svg" alt="card options">
-                        </button>
-                        <div popover id="opportunity-card-options-3">
-                            <a href="./user/settings.html#feed">
-                                <img src="questionmark-icon.svg" alt="">
-                                Why was this suggested?
-                            </a>
-                            <button onclick="alert(`Implementation missing!`)">
-                                <img src="thumbs-down-icon.svg" alt="">
-                                Show less content from this user
-                            </button>
-                            <button onclick="alert(`Implementation missing!`)">
-                                <img src="thumbs-up-icon.svg" alt="">
-                                Show more content from this user
-                            </button>
-                            <button onclick="alert(`Implementation missing!`)">
-                                <img src="waringsign-icon.svg" alt="">
-                                Report issues
-                            </button>
-                        </div>
-                    </header>
-
-                    <h3>How do you approuch complex clinical decisions in Pediatrics?</h3>
-                    <p>
-                        <img src="speak-bubble-icon.svg" alt="">
-                        3 Comments
-                    </p>
-                    <div>
-                        <p>Clinical Decision-Making</p>
-                        <p>Patient Care</p>
-                    </div>
-
-                    <footer>
-                        <p>Open question</p>
-                    </footer>
-                </article>
-                <article>
-                    <a href="/details/event-details.html">Open Card</a>
-                    <header>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="bookmark-icon.svg" alt="bookmark">
-                        </button>
-                        <button popovertarget="opportunity-card-options-4">
-                            <img src="vertical-dots-icon.svg" alt="card options">
-                        </button>
-                        <div popover id="opportunity-card-options-4">
-                            <a href="./user/settings.html#feed">
-                                <img src="questionmark-icon.svg" alt="">
-                                Why was this suggested?
-                            </a>
-                            <button onclick="alert(`Implementation missing!`)">
-                                <img src="thumbs-down-icon.svg" alt="">
-                                Show less content from this user
-                            </button>
-                            <button onclick="alert(`Implementation missing!`)">
-                                <img src="thumbs-up-icon.svg" alt="">
-                                Show more content from this user
-                            </button>
-                            <button onclick="alert(`Implementation missing!`)">
-                                <img src="waringsign-icon.svg" alt="">
-                                Report issues
-                            </button>
-                        </div>
-                    </header>
-
-                    <time datetime="2026-01-28">
-                        <span>01/28</span>
-                        Mon
-                    </time>
-                    <p><span>Location:</span> Online</p>
-                    <p>
-                        Time:<time datetime="11:00">11:00</time> - <time datetime="17:00">17:00</time>
-                    </p>
-                    <h3>Webinar: Together we stand up against aggression in (child) care</h3>
-                    <p>15 colleagues plat to attend</p>
-
-                    <footer>
-                        <p>
-                            <img src="world-wide-web-icon.svg" alt="">
-                            Webinar
-                        </p>
-                    </footer>
-                </article>
+            <div id="recommended" class="horizontal-carousel">
             </div>
             <img src="swipe-finger-icon.svg" alt="">
             <p>Swipe left to see more recommendations</p>
@@ -274,7 +80,7 @@
                     </form>
                 </search>
             </div>
-            <div>
+            <div class="horizontal-carousel">
                 <article>
                     <a href="/details/colleague-details.html">Open Card</a>
 
@@ -324,7 +130,7 @@
                     <a href="/details/colleague-details.html">Open Card</a>
 
                     <blockquote>
-                        Better healthcare happends when we work together
+                        Better healthcare happens when we work together
                     </blockquote>
                     <button onclick="alert(`Implementation missing!`)">
                         <img src="bookmark-icon.svg" alt="bookmark">
@@ -413,39 +219,7 @@
             <p>Swipe left to see more recommendations</p>
         </section>
     </main>
-    <aside>
-        <nav>
-            <a href="index.html">
-                <img src="home-icon.svg" alt="home-icon">
-            </a>
-            <button popovertarget="user-menu">
-                <img src="profile-icon.svg" alt="profile-icon">
-            </button>
-            <div popover id="user-menu">
-                <button popovertarget="user-menu">
-                    <img src="x-icon.svg" alt="x-icon">
-                </button>
-                <a href="/user/settings.html">
-                    <img src="kog-icon.svg" alt="kog-icon">
-                    Settings
-                </a>
-                <a href="/user/create-opportunity.html">
-                    <img src="plus-icon.svg" alt="plus-icon">
-                    Create opportunity
-                </a>
-                <a href="/user/profile.html">
-                    <img src="profile-icon.svg" alt="profile-icon">
-                    My profile
-                </a>
-            </div>
-            <a href="/user/chats.html">
-                <img src="speak-bubble-icon.svg" alt="speak-bubble-icon">
-            </a>
-            <a href="/user/notifications.html">
-                <img src="bell-icon.svg" alt="bell-icon">
-            </a>
-        </nav>
-    </aside>
+    <?start name="aside-bar">Loading...<?end>
 </body>
 
 </html>

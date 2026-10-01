@@ -1,0 +1,40 @@
+aside {
+    background-color: var(--white);
+    outline: 2px solid var(--base-bleached-silk);
+    position: sticky;
+    bottom: 0;
+    height: 86px;
+    width: 100%;
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 20px;
+
+        a,
+        button {
+            padding: 8px;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        button:hover,
+        a:hover {
+            background-color: var(--d900-night-rider);
+
+            svg path {
+                stroke: var(--white);
+                fill: var(--white)
+            }
+        }
+
+        a:nth-of-type(2):hover svg path {
+            stroke: var(--white);
+            fill: transparent;
+        }
+    }
+
+
+}
