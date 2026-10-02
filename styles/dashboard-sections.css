@@ -30,6 +30,7 @@ main section:nth-of-type(3) {
             padding: 8px;
             height: fit-content;
             width: 10em;
+            text-wrap: nowrap;
 
         }
 
