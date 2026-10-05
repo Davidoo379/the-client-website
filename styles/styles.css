@@ -153,6 +153,7 @@
     border: 0;
     font-size: 100%;
     font-family: var(--tasa-orbiter);
+    scrollbar-width: none;
 }
 
 html {
@@ -169,6 +170,10 @@ blockquote:after,
 q:before,
 q:after {
     content: '"';
+}
+
+button {
+    cursor: pointer;
 }
 
 a {

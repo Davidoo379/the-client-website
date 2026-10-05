@@ -58,8 +58,12 @@
             <div id="recommended" class="horizontal-carousel">
                 <!-- ! LOADS IN CARDS HERE -->
             </div>
-            <img src="swipe-finger-icon.svg" alt="">
+            <div class="swipe-tip">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.825 22C11.425 22 11.0417 21.925 10.675 21.775C10.3083 21.625 9.98333 21.4083 9.7 21.125L4.6 16L5.35 15.225C5.61667 14.9583 5.92933 14.7793 6.288 14.688C6.64667 14.5967 7.00067 14.6007 7.35 14.7L9 15.175V7C9 6.71667 9.096 6.47933 9.288 6.288C9.48 6.09667 9.71733 6.00067 10 6C10.2827 5.99933 10.5203 6.09533 10.713 6.288C10.9057 6.48067 11.0013 6.718 11 7V17.825L8.575 17.15L11.125 19.7C11.2083 19.7833 11.3127 19.8543 11.438 19.913C11.5633 19.9717 11.6923 20.0007 11.825 20H16C16.55 20 17.021 19.8043 17.413 19.413C17.805 19.0217 18.0007 18.5507 18 18V14C18 13.7167 18.096 13.4793 18.288 13.288C18.48 13.0967 18.7173 13.0007 19 13C19.2827 12.9993 19.5203 13.0953 19.713 13.288C19.9057 13.4807 20.0013 13.718 20 14V18C20 19.1 19.6083 20.0417 18.825 20.825C18.0417 21.6083 17.1 22 16 22H11.825ZM12 15V11C12 10.7167 12.096 10.4793 12.288 10.288C12.48 10.0967 12.7173 10.0007 13 10C13.2827 9.99933 13.5203 10.0953 13.713 10.288C13.9057 10.4807 14.0013 10.718 14 11V15H12ZM15 15V12C15 11.7167 15.096 11.4793 15.288 11.288C15.48 11.0967 15.7173 11.0007 16 11C16.2827 10.9993 16.5203 11.0953 16.713 11.288C16.9057 11.4807 17.0013 11.718 17 12V15H15ZM22 7H17V5.5H19.9C18.8 4.53333 17.575 3.79167 16.225 3.275C14.875 2.75833 13.4667 2.5 12 2.5C10.5333 2.5 9.125 2.75833 7.775 3.275C6.425 3.79167 5.2 4.53333 4.1 5.5H7V7H2V2H3.5V4.025C4.7 3.04167 6.025 2.29167 7.475 1.775C8.925 1.25833 10.4333 1 12 1C13.5667 1 15.075 1.25833 16.525 1.775C17.975 2.29167 19.3 3.04167 20.5 4.025V2H22V7Z" fill="#494949"/>
+            </svg>
             <p>Swipe left to see more recommendations</p>
+            </div>
         </section>
         <section>
             <h2>Your booked marked content</h2>
@@ -74,7 +78,10 @@
 
                 <search>
                     <button popovertarget="bookmark-search-form">
-                        <img src="magnifying-glass-icon.svg" alt="magnifying-glass-icon">
+                        <svg title="search" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.9709 17.0033L20.6667 20.6991M19.4992 10.4996C19.4992 12.8864 18.551 15.1755 16.8633 16.8633C15.1755 18.551 12.8864 19.4992 10.4996 19.4992C8.11276 19.4992 5.82367 18.551 4.13592 16.8633C2.44817 15.1755 1.5 12.8864 1.5 10.4996C1.5 8.11276 2.44817 5.82367 4.13592 4.13592C5.82367 2.44817 8.11276 1.5 10.4996 1.5C12.8864 1.5 15.1755 2.44817 16.8633 4.13592C18.551 5.82367 19.4992 8.11276 19.4992 10.4996Z" stroke="#494949" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
                     </button>
                     <form action="search" popover id="bookmark-search-form">
                         <label for="bookmark-search">Search in bookmarks:</label>
@@ -82,145 +89,16 @@
                     </form>
                 </search>
             </div>
-            <div class="horizontal-carousel">
+            <div id="bookmarks" class="horizontal-carousel">
                 <!-- ! LOADS IN CARDS HERE -->
-                <article>
-                    <a href="/details/colleague-details.html">Open Card</a>
-
-                    <blockquote>
-                        Well-interpreted data strengthens clinical decisions.
-                    </blockquote>
-                    <button onclick="alert(`Implementation missing!`)">
-                        <img src="bookmark-icon.svg" alt="bookmark">
-                    </button>
-                    <button popovertarget="opportunity-card-options-5">
-                        <img src="vertical-dots-icon.svg" alt="card options">
-                    </button>
-                    <div popover id="opportunity-card-options-5">
-                        <a href="./user/settings.html#feed">
-                            <img src="questionmark-icon.svg" alt="">
-                            Why was this suggested?
-                        </a>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="thumbs-down-icon.svg" alt="">
-                            Show less content from this user
-                        </button>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="thumbs-up-icon.svg" alt="">
-                            Show more content from this user
-                        </button>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="waringsign-icon.svg" alt="">
-                            Report issues
-                        </button>
-                    </div>
-                    <h3>Daniel Kim</h3>
-                    <p>Mediacal researcher</p>
-                    <p>
-                        <img src="plus-icon.svg" alt="">
-                        Psychiatry (early intervention in adolescents)
-                    </p>
-                    <p>
-                        <img src="hospital-icon.svg" alt="">
-                        Catharina Hospital
-                    </p>
-                    <div>
-                        <p>Open to mentoring</p>
-                    </div>
-
-                </article>
-                <article>
-                    <a href="/details/colleague-details.html">Open Card</a>
-
-                    <blockquote>
-                        Better healthcare happens when we work together
-                    </blockquote>
-                    <button onclick="alert(`Implementation missing!`)">
-                        <img src="bookmark-icon.svg" alt="bookmark">
-                    </button>
-                    <button popovertarget="opportunity-card-options-6">
-                        <img src="vertical-dots-icon.svg" alt="card options">
-                    </button>
-                    <div popover id="opportunity-card-options-6">
-                        <a href="./user/settings.html#feed">
-                            <img src="questionmark-icon.svg" alt="">
-                            Why was this suggested?
-                        </a>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="thumbs-down-icon.svg" alt="">
-                            Show less content from this user
-                        </button>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="thumbs-up-icon.svg" alt="">
-                            Show more content from this user
-                        </button>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="waringsign-icon.svg" alt="">
-                            Report issues
-                        </button>
-                    </div>
-                    <h3>Amara Chinedu Diallo</h3>
-                    <p>Fundamental researcher</p>
-                    <p>
-                        <img src=" plus-icon.svg" alt="">
-                            Anesthesiology (perioperative safety)
-                            </p>
-                            <p>
-                                <img src="hospital-icon.svg" alt="">
-                                Deventer Hospital
-                            </p>
-                            <div>
-                                <p>Open to mentoring</p>
-                            </div>
-
-                </article>
-                <article>
-                    <a href="/details/colleague-details.html">Open Card</a>
-
-                    <img src="tami-nikolaus.webp" alt="tami-nikolaus">
-                    <button onclick="alert(`Implementation missing!`)">
-                        <img src="bookmark-icon.svg" alt="bookmark">
-                    </button>
-                    <button popovertarget="opportunity-card-options-7">
-                        <img src="vertical-dots-icon.svg" alt="card options">
-                    </button>
-                    <div popover id="opportunity-card-options-7">
-                        <a href="./user/settings.html#feed">
-                            <img src="questionmark-icon.svg" alt="">
-                            Why was this suggested?
-                        </a>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="thumbs-down-icon.svg" alt="">
-                            Show less content from this user
-                        </button>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="thumbs-up-icon.svg" alt="">
-                            Show more content from this user
-                        </button>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="waringsign-icon.svg" alt="">
-                            Report issues
-                        </button>
-                    </div>
-                    <h3>Tami Nikolaus</h3>
-                    <p>Medical researcher</p>
-                    <p>
-                        <img src="plus-icon.svg" alt="">
-                        Hematology (transfusion medicine in children)
-                    </p>
-                    <p>
-                        <img src="hospital-icon.svg" alt="">
-                        Gelre Hospital
-                    </p>
-                    <div>
-                        <p>Open to questions</p>
-                    </div>
-
-                </article>
             </div>
-            <img src="swipe-finger-icon.svg" alt="">
-            <p>Swipe left to see more recommendations</p>
-        </section>
+            <div class="swipe-tip">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.825 22C11.425 22 11.0417 21.925 10.675 21.775C10.3083 21.625 9.98333 21.4083 9.7 21.125L4.6 16L5.35 15.225C5.61667 14.9583 5.92933 14.7793 6.288 14.688C6.64667 14.5967 7.00067 14.6007 7.35 14.7L9 15.175V7C9 6.71667 9.096 6.47933 9.288 6.288C9.48 6.09667 9.71733 6.00067 10 6C10.2827 5.99933 10.5203 6.09533 10.713 6.288C10.9057 6.48067 11.0013 6.718 11 7V17.825L8.575 17.15L11.125 19.7C11.2083 19.7833 11.3127 19.8543 11.438 19.913C11.5633 19.9717 11.6923 20.0007 11.825 20H16C16.55 20 17.021 19.8043 17.413 19.413C17.805 19.0217 18.0007 18.5507 18 18V14C18 13.7167 18.096 13.4793 18.288 13.288C18.48 13.0967 18.7173 13.0007 19 13C19.2827 12.9993 19.5203 13.0953 19.713 13.288C19.9057 13.4807 20.0013 13.718 20 14V18C20 19.1 19.6083 20.0417 18.825 20.825C18.0417 21.6083 17.1 22 16 22H11.825ZM12 15V11C12 10.7167 12.096 10.4793 12.288 10.288C12.48 10.0967 12.7173 10.0007 13 10C13.2827 9.99933 13.5203 10.0953 13.713 10.288C13.9057 10.4807 14.0013 10.718 14 11V15H12ZM15 15V12C15 11.7167 15.096 11.4793 15.288 11.288C15.48 11.0967 15.7173 11.0007 16 11C16.2827 10.9993 16.5203 11.0953 16.713 11.288C16.9057 11.4807 17.0013 11.718 17 12V15H15ZM22 7H17V5.5H19.9C18.8 4.53333 17.575 3.79167 16.225 3.275C14.875 2.75833 13.4667 2.5 12 2.5C10.5333 2.5 9.125 2.75833 7.775 3.275C6.425 3.79167 5.2 4.53333 4.1 5.5H7V7H2V2H3.5V4.025C4.7 3.04167 6.025 2.29167 7.475 1.775C8.925 1.25833 10.4333 1 12 1C13.5667 1 15.075 1.25833 16.525 1.775C17.975 2.29167 19.3 3.04167 20.5 4.025V2H22V7Z" fill="#494949"/>
+                </svg>
+                <p>Swipe left to see more recommendations</p>
+            </div>
+            </section>
     </main>
     <!-- ! LOADS ASIDE BAR HERE  -->
     <?start name="aside-bar">Loading...<?end>

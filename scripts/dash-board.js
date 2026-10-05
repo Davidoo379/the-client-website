@@ -22,6 +22,7 @@ import { loadTemplate, addCard } from "./cards.js";
 
 const template = await loadTemplate("../template-html/cards-template.html", "card-template");
 const profileCardTemplate = await loadTemplate("../template-html/cards-template.html", "profile-card-template");
+const profileQuoteCardTemplate = await loadTemplate("../template-html/cards-template.html", "profile-quote-card-template");
 const eventCardTemplate = await loadTemplate("../template-html/cards-template.html", "event-card-template");
 
 addCard(
@@ -54,7 +55,7 @@ addCard(
     ["Clinical Decision-Making", "Patient Care"],
     ["Open question"],
     "recommended"
-    // #TODO ADD COMMENTS
+    // TODO ADD COMMENTS
 );
 
 addCard(
@@ -72,6 +73,52 @@ addCard(
     { date: "2026-01-28", start: "11:00", end: "17:00" },
     "NvK",
     "15"
-
 );
 
+addCard(
+    profileQuoteCardTemplate,
+    "Daniel Kim",
+    "Mediacal researcher",
+    "",
+    ["Open to mentoring"],
+    [""],
+    "bookmarks",
+    "",
+    "Catharina Hospital",
+    "Psychiatry (early intervention in adolescents)",
+    "",
+    "",
+    "",
+    "",
+    "Well-interpreted data strengthens clinical decisions."
+);
+addCard(
+    profileQuoteCardTemplate,
+    "Amara Chinedu Diallo",
+    "Fundamental researcher",
+    "",
+    ["Open to mentoring"],
+    [""],
+    "bookmarks",
+    "",
+    "Deventer Hospital",
+    "Anesthesiology (perioperative safety)",
+    "",
+    "",
+    "",
+    "",
+    "Better healthcare happens when we work together"
+);
+
+addCard(
+    profileCardTemplate,
+    "Tami Nikolaus",
+    "Medical researcher",
+    "",
+    ["Open to questions"],
+    [""],
+    "bookmarks",
+    "./assets/tami-nikolaus.png",
+    "Gelre Hospital",
+    "Hematology (transfusion medicine in children)"
+);

@@ -69,12 +69,13 @@ function setTimeEl(el, value) {
     el.textContent = value;
 }
 
-function addCard(template, name, role, title, meshTerms, cardTags, list, img, institute, subSpecialism, location, time, organizer, attendees) {
+function addCard(template, name, role, title, meshTerms, cardTags, list, img, institute, subSpecialism, location, time, organizer, attendees, quote) {
     const clone = document.importNode(template.content, true);
 
     if (name) clone.querySelector(".name")?.append(name);
     if (role) clone.querySelector(".role")?.append(role);
     if (title) clone.querySelector(".title")?.append(title);
+    if (quote) clone.querySelector(".profileQuote")?.append(quote);
     if (attendees) clone.querySelector(".attendees")?.append(attendees);
     if (location) clone.querySelector(".location")?.append(location);
     if (organizer) clone.querySelector(".organizer")?.append(organizer);

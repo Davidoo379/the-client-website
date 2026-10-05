@@ -3,9 +3,10 @@
     flex-wrap: nowrap;
     flex-direction: row;
     overflow-x: scroll;
-    gap: 16px;
+    gap: 2rem;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    padding: 1rem;
 
     article {
         scroll-snap-align: center;
