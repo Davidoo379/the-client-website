@@ -84,6 +84,12 @@ select option:last-child {
     border-radius: 0px 0px 8px 8px;
 }
 
+@property --reveal {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+}
+
 section {
     .swipe-tip {
         display: flex;
@@ -104,6 +110,41 @@ section {
 
     }
 
+    search {
+        anchor-scope: all;
+
+        button {
+            anchor-name: --search;
+        }
+
+        form[popover]:popover-open {
+            position-anchor: --search;
+            top: anchor(bottom);
+            right: anchor(right);
+            margin-top: 0.7rem;
+            width: 100%;
+            mask-image: linear-gradient(to bottom, #000 var(--reveal), transparent var(--reveal));
+            transition: --reveal 0.2s ease;
+            --reveal: 100%;
+
+            @starting-style {
+                --reveal: 0%;
+                rotate: 45deg;
+            }
+
+
+            label {
+                display: none;
+            }
+
+            input {
+                width: 100%;
+                padding: 0.8rem;
+                background-color: var(--d100-bleached-silk);
+            }
+
+        }
+    }
 
 }
 

@@ -69,6 +69,8 @@ function setTimeEl(el, value) {
     el.textContent = value;
 }
 
+let cardIndex = 0;
+
 function addCard(template, name, role, title, meshTerms, cardTags, list, img, institute, subSpecialism, location, time, organizer, attendees, quote) {
     const clone = document.importNode(template.content, true);
 
@@ -95,6 +97,15 @@ function addCard(template, name, role, title, meshTerms, cardTags, list, img, in
         imgEl.src = img;
         imgEl.alt = "";
     }
+
+
+    const cardButtons = clone.querySelector('.card-buttons');
+    const cardButton = cardButtons.querySelector(':scope > button:nth-of-type(2)');
+    const cardButtonPopover = cardButtons.querySelector(':scope > div');
+    const id = `card-popover-${cardIndex}`;
+    cardButtonPopover.id = id;
+    cardButton.setAttribute('popovertarget', id);
+    cardIndex++;
 
     document.getElementById(list).appendChild(clone);
 }
