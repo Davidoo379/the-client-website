@@ -14,6 +14,11 @@ aside {
         height: 100%;
         gap: 20px;
 
+        button:nth-child(1) {
+            padding: 0;
+            height: 44px;
+        }
+
         a,
         button {
             padding: 8px;
@@ -36,6 +41,79 @@ aside {
             fill: transparent;
         }
     }
+
+    /* POPOVER OPEN STATE */
+    aside {
+        anchor-scope: all;
+
+        nav {
+            anchor-name: --sidebar;
+        }
+    }
+
+    nav div[popover]:popover-open {
+        @starting-style {
+            height: 80px;
+            background-color: transparent;
+            transform: translateY(100%);
+
+            a {
+                display: flex;
+                color: transparent;
+            }
+        }
+
+        transition: 0.2s ease;
+        position: fixed;
+        position-anchor: --sidebar;
+        top: anchor(bottom);
+        right: anchor(right);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        overflow-y: clip;
+        padding: 1rem;
+        white-space: nowrap;
+        gap: 1rem;
+        width: 100%;
+        height: 270px;
+        border-radius: 1rem 1rem 0rem 0rem;
+        font-size: 20px;
+        bottom: 86px;
+
+        a {
+            display: flex;
+            color: var(--d600-bleached-silk);
+            align-items: center;
+            border-radius: 8px;
+            padding-left: 0.5rem;
+
+            svg {
+                margin-right: 1rem;
+            }
+        }
+
+        a:hover {
+            background-color: var(--d900-night-rider);
+
+            svg path {
+                fill: transparent;
+            }
+        }
+
+        a:hover,
+        a:focus-visible {
+            color: var(--base-bleached-silk);
+
+            svg path {
+                fill: var(--base-bleached-silk);
+                stroke: var(--base-bleached-silk);
+            }
+        }
+    }
+
+
+
 
 
 }
