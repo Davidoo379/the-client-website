@@ -8,25 +8,27 @@ body>header {
     height: 80px;
     padding: 20px;
     z-index: 1;
-}
 
-h1 {
-    color: var(--base-night-rider);
-    font-size: 24px;
-    font-weight: 500;
-}
+    h1 {
+        color: var(--base-night-rider);
+        font-size: 24px;
+        font-weight: 500;
+    }
 
-header button,
-header>a {
-    width: 44px;
-    height: 44px;
-}
+    button,
+    >a {
+        width: 44px;
+        height: 44px;
+    }
 
 
-nav[popover] {
-    background-color: var(--base-bleached-silk);
-    top: 0px;
-    transition: 0.5s ease;
+    nav[popover] {
+        background-color: var(--base-bleached-silk);
+        top: 0px;
+        transition: 0.5s ease;
+    }
+
+
 }
 
 /* POPOVER OPEN STATE */
@@ -76,6 +78,9 @@ nav[popover]:popover-open {
         }
     }
 }
+
+
+
 
 
 @starting-style {
