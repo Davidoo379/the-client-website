@@ -130,3 +130,8 @@ section::after {
             transparent calc(var(--i) * 12.5) calc(var(--i) * 13.5),
             var(--d200-bleached-silk) calc(var(--i) * 13.5));
 }
+
+section:last-child::after {
+    content: "";
+    background-image: none;
+}
