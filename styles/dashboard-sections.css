@@ -176,3 +176,7 @@ section:last-child::after {
     content: "";
     background-image: none;
 }
+
+section:first-child::after {
+    margin-inline: 4rem;
+}
