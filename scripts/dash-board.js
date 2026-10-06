@@ -25,21 +25,37 @@ const profileQuoteCardTemplate = await loadTemplate("../template-html/cards-temp
 const eventCardTemplate = await loadTemplate("../template-html/cards-template.html", "event-card-template");
 
 
+// * HEADER HAMBURGER MENU
 const menuButton = document.querySelector("body > header button");
 const menuCloseButton = document.querySelector("body>header nav>button");
 
-// * HEADER HAMBURGER MENU
 menuButton.addEventListener("click", openMenu);
 menuCloseButton.addEventListener("click", closeMenu);
 
 function openMenu() {
-    const navMenu = document.querySelector("header>nav");
+    const navMenu = document.querySelector("header > nav");
     navMenu.classList.add("openNavMenu");
 }
 
 function closeMenu() {
-    const navMenu = document.querySelector("header>nav");
+    const navMenu = document.querySelector("header > nav");
     navMenu.classList.remove("openNavMenu");
+}
+// * PROFILE OPTIONS MENU
+const profileMenu = document.querySelector("aside nav > button");
+const profileMenuCloseButton = document.querySelector("aside nav div >  button");
+
+profileMenu.addEventListener("click", openProfileMenu);
+profileMenuCloseButton.addEventListener("click", closeProfileMenu);
+
+function openProfileMenu() {
+    const profileMenu = document.querySelector("aside nav div");
+    profileMenu.classList.add("openProfileMenu");
+}
+
+function closeProfileMenu() {
+    const profileMenu = document.querySelector("aside nav div");
+    profileMenu.classList.remove("openProfileMenu");
 }
 
 addCard(
