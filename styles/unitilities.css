@@ -16,4 +16,12 @@
         max-width: 330px;
         height: 300px;
     }
+
+    @media (min-width: 900px) {
+        flex-wrap: wrap;
+        overflow-x: unset;
+        justify-content: center;
+        max-width: 1200px;
+        justify-self: center;
+    }
 }
