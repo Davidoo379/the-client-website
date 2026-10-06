@@ -1,7 +1,6 @@
 const files = [
     './template-html/header-blueprint.html',
     './template-html/aside-bar-blueprint.html',
-    './template-html/card-buttons.html',
     './template-html/dashboard-content.html'];
 
 // Start all downloads at once
@@ -10,7 +9,7 @@ const responses = await Promise.all(files.map(f => fetch(f)));
 // Stream them into the page one at a time, in order
 for (const res of responses) {
     if (!res.ok) {
-        console.error('Failed to load', res.url, res.status);
+        // ! console.error('Failed to load', res.url, res.status);
         continue;
     }
     await res.body
@@ -24,6 +23,24 @@ const template = await loadTemplate("../template-html/cards-template.html", "car
 const profileCardTemplate = await loadTemplate("../template-html/cards-template.html", "profile-card-template");
 const profileQuoteCardTemplate = await loadTemplate("../template-html/cards-template.html", "profile-quote-card-template");
 const eventCardTemplate = await loadTemplate("../template-html/cards-template.html", "event-card-template");
+
+
+const menuButton = document.querySelector("body > header button");
+const menuCloseButton = document.querySelector("body>header nav>button");
+
+// * HEADER HAMBURGER MENU
+menuButton.addEventListener("click", openMenu);
+menuCloseButton.addEventListener("click", closeMenu);
+
+function openMenu() {
+    const navMenu = document.querySelector("header>nav");
+    navMenu.classList.add("openNavMenu");
+}
+
+function closeMenu() {
+    const navMenu = document.querySelector("header>nav");
+    navMenu.classList.remove("openNavMenu");
+}
 
 addCard(
     template,

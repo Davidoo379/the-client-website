@@ -1,4 +1,3 @@
-// filters.js
 function submitOpportunitiesFilters() {
     document.getElementById('type-of-post').requestSubmit();
     document.getElementById('role').requestSubmit();
@@ -22,3 +21,6 @@ function submitColleaguesFilters() {
     document.getElementById('mesh-terms').requestSubmit();
     document.getElementById('intentions').requestSubmit();
 }
+
+
+
