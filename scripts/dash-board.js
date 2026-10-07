@@ -58,6 +58,23 @@ function closeProfileMenu() {
     profileMenu.classList.remove("openProfileMenu");
 }
 
+const header = document.querySelector("body > header");
+const aside = document.querySelector("body > aside");
+header.addEventListener("mouseover", sideBarHover);
+aside.addEventListener("mouseover", sideBarHover);
+header.addEventListener("mouseout", sideBarHoverOut);
+aside.addEventListener("mouseout", sideBarHoverOut);
+console.log(aside);
+function sideBarHover() {
+    header.classList.add("sideBarOpen");
+    aside.classList.add("sideBarOpen");
+}
+function sideBarHoverOut() {
+    header.classList.remove("sideBarOpen");
+    aside.classList.remove("sideBarOpen");
+}
+
+
 addCard(
     template,
     "Anthony Martina",

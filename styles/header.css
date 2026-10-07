@@ -52,14 +52,44 @@ body>header {
         position: fixed;
         height: 50vh;
         width: 150px;
+
+
         top: 0;
 
         button {
             display: none;
         }
 
+
         >a {
             margin-block: 2rem;
+            display: unset;
+        }
+
+        nav span {
+            display: none;
+        }
+
+
+        &.sideBarOpen {
+            width: 350px;
+            transition: 0.2s;
+
+            nav a {
+                span {
+                    display: inline;
+                    white-space: nowrap;
+                }
+
+                padding-right: 1rem;
+                width: 100%;
+                color: var(--base-night-rider);
+            }
+
+            a:hover,
+            a:focus-visible {
+                color: var(--base-bleached-silk);
+            }
         }
     }
 
@@ -90,7 +120,7 @@ header>nav {
         position: unset;
         top: 0;
         height: 100%;
-        width: 300px;
+        width: auto;
         align-items: start;
         align-self: start;
     }
