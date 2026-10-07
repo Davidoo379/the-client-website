@@ -1,0 +1,101 @@
+body {
+    >div {
+        position: sticky;
+        top: 80px;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: var(--base-bleached-silk);
+
+        >search {
+            background-color: var(--l900-night-rider);
+            border-radius: 9999px;
+
+            form {
+                min-width: 70vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                input {
+                    background-color: transparent;
+                    padding: 1rem;
+                    color: var(--d700-bleached-silk);
+                }
+
+                button {
+                    background-color: transparent;
+                }
+            }
+
+            label {
+                display: none;
+            }
+        }
+
+        svg {
+            margin: 1rem;
+            background-color: transparent;
+        }
+
+        button:nth-child(2) {
+            align-self: end;
+            margin-left: auto;
+        }
+    }
+
+    main {
+        padding: 1rem;
+
+        h2 {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        h2:nth-of-type(2) {
+            padding-block: 1rem;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        >div {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: start;
+            justify-content: center;
+            gap: 2rem;
+
+            article {
+                width: 300px;
+            }
+        }
+
+        div:nth-of-type(2) {
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+            p {
+                padding: 1rem;
+                color: var(--d300-bleached-silk);
+            }
+
+            svg {
+                animation: spinner 5s linear infinite;
+            }
+        }
+    }
+}
+
+@keyframes spinner {
+    to {
+        rotate: 360deg;
+    }
+}
