@@ -29,7 +29,7 @@ In opdracht van Lotte v L, Kinderarts.
 ### HTML
 Het is gestructureerd met een header voor de navigatie boven aan. Een main voor de sections waar de kaartjes zijn. En een aside voor de zijbalk/ onderbalk.
 De content en detail pagina's zijn apart en nog niet gestijlt.
-Ik maakt gebruik van Declarative paritsion markers, Dit is een chrome experimental feature.
+Ik maakt gebruik van Declarative paritsion markers, Dit is een chrome experimental feature.[chrome://flags/#enable-experimental-web-platform-features](Chrome feature)
 ### CSS
 De css staat in aparte files en gebruikt een breakpoint op 900px om naar de desktop layout tegaan.
 ### JAVASCRIPT
