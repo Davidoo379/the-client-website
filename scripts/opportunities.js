@@ -64,7 +64,6 @@ header.addEventListener("mouseover", sideBarHover);
 aside.addEventListener("mouseover", sideBarHover);
 header.addEventListener("mouseout", sideBarHoverOut);
 aside.addEventListener("mouseout", sideBarHoverOut);
-console.log(aside);
 function sideBarHover() {
     header.classList.add("sideBarOpen");
     aside.classList.add("sideBarOpen");

@@ -8,6 +8,16 @@ body {
         background-color: var(--base-bleached-silk);
         z-index: 2;
 
+        @media (min-width: 900px) {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            position: static;
+            height: 5.7rem;
+            margin-top: 150px;
+            background-color: unset;
+            padding-inline: 2rem;
+        }
+
         >search {
             background-color: var(--l900-night-rider);
             border-radius: 9999px;
@@ -75,6 +85,31 @@ body {
     main {
         padding: 1rem;
 
+        @media (min-width: 900px) {
+            margin-top: 0px;
+
+            >p,
+            h2:nth-of-type(1) {
+                background-color: var(--l600-lustful-wishes);
+                text-align: center;
+            }
+
+            h2:nth-of-type(1) {
+                padding-top: 2rem;
+                padding-bottom: 0.3rem;
+                border-radius: 25px 25px 0px 0px;
+                font-weight: 500;
+                font-size: 34px;
+                line-height: 100%;
+            }
+
+
+            >p {
+                padding-bottom: 8rem;
+                border-radius: 0px 0px 25px 25px;
+            }
+        }
+
         h2 {
             font-weight: 600;
             font-size: 18px;
@@ -103,12 +138,14 @@ body {
         }
 
         article {
-            max-width: 350px;
-            height: auto;
-            place-self: center;
+            max-width: 400px;
+            max-height: auto;
+            min-height: 250px;
+            place-self: start;
         }
 
-        >div:last-of-type() {
+
+        >div:last-child {
             align-items: center;
             flex-wrap: nowrap;
             flex-direction: column;

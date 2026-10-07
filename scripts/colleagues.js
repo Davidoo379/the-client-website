@@ -1,7 +1,7 @@
 const files = [
     '../template-html/header-blueprint.html',
     '../template-html/aside-bar-blueprint.html',
-    '../template-html/events-and-conventions-content.html'];
+    '../template-html/colleagues-content.html'];
 
 // Start all downloads at once
 const responses = await Promise.all(files.map(f => fetch(f)));
@@ -23,6 +23,7 @@ const template = await loadTemplate("../template-html/cards-template.html", "car
 const profileCardTemplate = await loadTemplate("../template-html/cards-template.html", "profile-card-template");
 const profileQuoteCardTemplate = await loadTemplate("../template-html/cards-template.html", "profile-quote-card-template");
 const eventCardTemplate = await loadTemplate("../template-html/cards-template.html", "event-card-template");
+const comboCardTemplate = await loadTemplate("../template-html/cards-template.html", "combo-card-template");
 
 
 // * HEADER HAMBURGER MENU
@@ -64,6 +65,7 @@ header.addEventListener("mouseover", sideBarHover);
 aside.addEventListener("mouseover", sideBarHover);
 header.addEventListener("mouseout", sideBarHoverOut);
 aside.addEventListener("mouseout", sideBarHoverOut);
+
 function sideBarHover() {
     header.classList.add("sideBarOpen");
     aside.classList.add("sideBarOpen");
@@ -74,67 +76,53 @@ function sideBarHoverOut() {
 }
 
 addCard(
-    eventCardTemplate,
+    profileCardTemplate,
+    "Noor Becker",
+    "Mediacal researcher",
     "",
-    "",
-    "Webinar: Together we stand up against aggression in (child) care",
+    ["Open to mentoring", "Open to case-based discussions"],
     [""],
-    ["Webinar"],
-    "2026-01-28",
+    "list",
+    "../assets/noor-becker.png",
+    "Admiraal De Ruyter",
+    "Surgery (postoperative recover in children)",
     "",
     "",
     "",
-    "Online",
-    { date: "2026-01-28", start: "11:00", end: "17:00" },
-    "NvK",
-    "15"
+    ""
 );
 addCard(
-    eventCardTemplate,
+    comboCardTemplate,
+    "Ananya Rao",
+    "Student",
     "",
-    "",
-    "The journey of pediatric medical care towards a transmural future",
+    ["Seeking mentoring"],
     [""],
-    ["Congress"],
-    "2026-01-31",
+    "list",
+    "../assets/ananya-roa.png",
+    "UMC",
+    "Urology",
     "",
     "",
     "",
-    "NYC Congress, Lichtenvoorde",
-    { date: "2026-01-31", start: "9:00", end: "17:00" },
-    "NvK",
-    "23"
+    "",
+    "I believe small improvements can make a lasting difference and precision matters, even early intraining."
 );
 addCard(
-    eventCardTemplate,
+    comboCardTemplate,
+    "Ahmed Abdirahman Ali",
+    "Doctor",
     "",
-    "",
-    "Natoopma; Pediatric Dermatology Day: Pediatrocian and dermatologist: together we achieve more!",
+    ["Open to sparring"],
     [""],
-    ["Symposium"],
-    "2026-02-05",
+    "list",
+    "../assets/ahmed-abdirahman-ali.png",
+    "Wilhelmina Childrenshospital",
+    "Pathology (standardizing diagnostic reporting in pediatrics)",
     "",
     "",
     "",
-    "Reehorst, Ede",
-    { date: "2026-02-05", start: "08:45", end: "16:30" },
-    "NvK",
-    "23"
-);
-addCard(
-    eventCardTemplate,
     "",
-    "",
-    "Congress on psychiatry around pregnancy",
-    [""],
-    ["Congress"],
-    "2026-02-10",
-    "",
-    "",
-    "",
-    "NH Hotel",
-    { date: "2026-02-10", start: "9:30", end: "16:00" },
-    "NvK",
-    "23"
+    "Every slide tells a story, if you know how to read it."
 );
 
