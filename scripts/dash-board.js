@@ -19,10 +19,10 @@ for (const res of responses) {
 
 import { loadTemplate, addCard } from "./cards.js";
 
-const template = await loadTemplate("../template-html/cards-template.html", "card-template");
-const profileCardTemplate = await loadTemplate("../template-html/cards-template.html", "profile-card-template");
-const profileQuoteCardTemplate = await loadTemplate("../template-html/cards-template.html", "profile-quote-card-template");
-const eventCardTemplate = await loadTemplate("../template-html/cards-template.html", "event-card-template");
+const template = await loadTemplate("template-html/cards-template.html", "card-template");
+const profileCardTemplate = await loadTemplate("template-html/cards-template.html", "profile-card-template");
+const profileQuoteCardTemplate = await loadTemplate("template-html/cards-template.html", "profile-quote-card-template");
+const eventCardTemplate = await loadTemplate("template-html/cards-template.html", "event-card-template");
 
 
 // * HEADER HAMBURGER MENU

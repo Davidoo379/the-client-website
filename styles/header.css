@@ -50,7 +50,7 @@ body>header {
         background-color: var(--white);
         height: 100%;
         position: fixed;
-        height: 50vh;
+        height: 50%;
         width: 150px;
 
 
@@ -99,7 +99,6 @@ body>header {
 /* POPOVER OPEN STATE */
 header>nav {
     background-color: var(--base-bleached-silk);
-    transition: 0.3s ease;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -123,6 +122,7 @@ header>nav {
         width: auto;
         align-items: start;
         align-self: start;
+        transition: unset;
     }
 
 

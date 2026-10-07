@@ -14,7 +14,7 @@ aside {
         height: 100%;
         outline: unset;
         position: fixed;
-        height: 50vh;
+        height: 50%;
         width: 150px;
 
         &.sideBarOpen {
