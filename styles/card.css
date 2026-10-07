@@ -313,7 +313,7 @@ article {
 .event-card {
     display: grid;
     grid-template-columns: 30% 1fr;
-    grid-template-rows: min-content 1.2rem 1.2rem 1.2rem 1fr 1fr;
+    grid-template-rows: min-content 1.2rem 1.2rem 1.2rem 1fr min-content;
     font-weight: 400;
     font-size: 14px;
     color: var(--d700-bleached-silk);
