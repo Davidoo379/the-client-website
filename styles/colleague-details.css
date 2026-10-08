@@ -1,6 +1,7 @@
 main {
     display: grid;
     grid-template-columns: 40% 40% 1fr;
+    grid-template-rows: 4rem 1fr;
     padding: 1rem;
 
     h2 {
