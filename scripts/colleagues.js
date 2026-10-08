@@ -17,7 +17,7 @@ for (const res of responses) {
         .pipeTo(document.body.streamAppendHTMLUnsafe());
 }
 
-import { loadTemplate, addCard } from "./scripts/cards.js";
+import { loadTemplate, addCard } from "/scripts/cards.js";
 
 const template = await loadTemplate("/template-html/cards-template.html", "card-template");
 const profileCardTemplate = await loadTemplate("/template-html/cards-template.html", "profile-card-template");
