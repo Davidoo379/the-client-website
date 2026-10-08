@@ -1,7 +1,7 @@
 const files = [
-    '/template-html/header-blueprint.html',
-    '/template-html/aside-bar-blueprint.html',
-    '/template-html/colleagues-content.html'];
+    '../template-html/header-blueprint.html',
+    '../template-html/aside-bar-blueprint.html',
+    '../template-html/colleagues-content.html'];
 
 // Start all downloads at once
 const responses = await Promise.all(files.map(f => fetch(f)));
@@ -17,13 +17,13 @@ for (const res of responses) {
         .pipeTo(document.body.streamAppendHTMLUnsafe());
 }
 
-import { loadTemplate, addCard } from "/scripts/cards.js";
+import { loadTemplate, addCard } from "../scripts/cards.js";
 
-const template = await loadTemplate("/template-html/cards-template.html", "card-template");
-const profileCardTemplate = await loadTemplate("/template-html/cards-template.html", "profile-card-template");
-const profileQuoteCardTemplate = await loadTemplate("/template-html/cards-template.html", "profile-quote-card-template");
-const eventCardTemplate = await loadTemplate("/template-html/cards-template.html", "event-card-template");
-const comboCardTemplate = await loadTemplate("/template-html/cards-template.html", "combo-card-template");
+const template = await loadTemplate("../template-html/cards-template.html", "card-template");
+const profileCardTemplate = await loadTemplate("../template-html/cards-template.html", "profile-card-template");
+const profileQuoteCardTemplate = await loadTemplate("../template-html/cards-template.html", "profile-quote-card-template");
+const eventCardTemplate = await loadTemplate("../template-html/cards-template.html", "event-card-template");
+const comboCardTemplate = await loadTemplate("../template-html/cards-template.html", "combo-card-template");
 
 
 // * HEADER HAMBURGER MENU
@@ -83,7 +83,7 @@ addCard(
     ["Open to mentoring", "Open to case-based discussions"],
     [""],
     "list",
-    "/assets/noor-becker.png",
+    "../assets/noor-becker.png",
     "Admiraal De Ruyter",
     "Surgery (postoperative recover in children)",
     "",
@@ -99,7 +99,7 @@ addCard(
     ["Seeking mentoring"],
     [""],
     "list",
-    "/assets/ananya-roa.png",
+    "../assets/ananya-roa.png",
     "UMC",
     "Urology",
     "",
@@ -116,7 +116,7 @@ addCard(
     ["Open to sparring"],
     [""],
     "list",
-    "/assets/ahmed-abdirahman-ali.png",
+    "../assets/ahmed-abdirahman-ali.png",
     "Wilhelmina Childrenshospital",
     "Pathology (standardizing diagnostic reporting in pediatrics)",
     "",
