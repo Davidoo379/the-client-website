@@ -4,42 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/card.css">
+    <link rel="stylesheet" href="../styles/unitilities.css">
+    <link rel="stylesheet" href="../styles/colleague-details.css">
+    <script type="module" src="../scripts/colleague.js"></script>
     <title>Colleague details</title>
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <img src="pediaconnect-icon.svg" alt="pediaconnect-icon">
-        </a>
-        <h1>Colleague</h1>
-        <button popovertarget="navigation-menu">
-            <img src="hamburger-menu-icon.svg" alt="">
-        </button>
-        <nav popover id="navigation-menu">
-            <button popovertarget="navigation-menu">
-                <img src="x-icon.svg" alt="x-icon">
-            </button>
-            <a href="/content/opportunities.html">
-                <img src="airhorn-icon.svg" alt="air-horn-icon">
-                Opportunities
-            </a>
-
-            <a href="/content/events-and-conventions.html">
-                <img src="calender-icon.svg" alt="calender">
-                Events & conventions
-            </a>
-
-            <a href="/content/colleagues.html">
-                <img src="three-figures.svg" alt="three-figures">
-                Colleagues
-            </a>
-        </nav>
-    </header>
+    <?start name="header-blueprint">Loading header…<?end>
     <main>
         <h2>Dr. Elise Thompson</h2>
-        <button aria-label="Mutual Interests Popover" popovertarget="mutual-interests">
-            <img src="magnet-icon.svg" alt="magnet-icon">
+        <button popovertarget="mutual-interests">
+           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.72719 13.8902C6.42658 15.1908 5.6959 16.9549 5.6959 18.7942C5.6959 20.6336 6.42658 22.3976 7.72719 23.6982C9.02781 24.9988 10.7918 25.7295 12.6312 25.7295C14.4705 25.7295 16.2345 24.9988 17.5352 23.6982" stroke="#561B40" stroke-width="1.5" stroke-miterlimit="10"/>
+                <path d="M10.9965 17.1598C10.5688 17.5945 10.3302 18.1806 10.3327 18.7905C10.3351 19.4003 10.5785 19.9845 11.0097 20.4157C11.4409 20.8469 12.0251 21.0903 12.6349 21.0928C13.2448 21.0952 13.8309 20.8566 14.2656 20.4289" stroke="#561B40" stroke-width="1.5" stroke-miterlimit="10"/>
+                <path d="M18.7953 5.69472V8.00644V5.69472ZM23.699 7.72614L22.0645 9.36072L23.699 7.72614ZM25.7305 12.6299H23.4187H25.7305Z" fill="#561B40"/>
+                <path d="M18.7953 5.69471V8.00644M23.699 7.72614L22.0645 9.36072M25.7305 12.6299H23.4187" stroke="#561B40" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                <path d="M14.266 20.4296L19.7149 14.9811C20.0039 14.6922 20.3959 14.5299 20.8045 14.5299C21.2132 14.5299 21.6052 14.6922 21.8942 14.9811L22.986 16.0705C23.1291 16.2136 23.2427 16.3836 23.3202 16.5706C23.3976 16.7576 23.4375 16.958 23.4375 17.1604C23.4375 17.3628 23.3976 17.5633 23.3202 17.7503C23.2427 17.9373 23.1291 18.1072 22.986 18.2503L17.5351 23.6992M7.72717 13.8913L13.1761 8.4404C13.3192 8.29726 13.4891 8.18371 13.6761 8.10624C13.8631 8.02876 14.0636 7.98889 14.266 7.98889C14.4684 7.98889 14.6688 8.02876 14.8558 8.10624C15.0428 8.18371 15.2127 8.29726 15.3559 8.4404L16.4453 9.53029C16.5884 9.6734 16.702 9.84331 16.7794 10.0303C16.8569 10.2173 16.8968 10.4178 16.8968 10.6202C16.8968 10.8226 16.8569 11.023 16.7794 11.21C16.702 11.397 16.5884 11.5669 16.4453 11.71L10.9968 17.1604M21.3196 19.8555L18.0505 16.5859M14.7813 13.3167L11.5117 10.0475" stroke="#561B40" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+
+                <path d="M7.06871 13.1903L12.5176 7.74188C12.8066 7.45293 13.1986 7.2906 13.6073 7.2906C14.016 7.2906 14.4079 7.45293 14.6969 7.74188L15.7887 8.83128C15.9319 8.97439 16.0454 9.1443 16.1229 9.3313C16.2004 9.51831 16.2402 9.71874 16.2402 9.92116C16.2402 10.1236 16.2004 10.324 16.1229 10.511C16.0454 10.698 15.9319 10.8679 15.7887 11.011L10.3379 16.46M0.529906 6.652L5.97883 1.20115C6.12194 1.058 6.29185 0.94445 6.47886 0.866978C6.66586 0.789506 6.86629 0.749633 7.06871 0.749633C7.27112 0.749633 7.47156 0.789506 7.65856 0.866978C7.84557 0.94445 8.01548 1.058 8.15859 1.20115L9.24799 2.29103C9.39113 2.43414 9.50469 2.60405 9.58216 2.79106C9.65963 2.97806 9.6995 3.17849 9.6995 3.38091C9.6995 3.58333 9.65963 3.78376 9.58216 3.97076C9.50469 4.15777 9.39113 4.32768 9.24799 4.47079L3.79955 9.92116M14.1224 12.6162L10.8532 9.3466M7.58403 6.07744L4.31439 2.80828" stroke="#561B40" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+
         </button>
         <div popover id="mutual-interests">
             <section>
@@ -57,7 +46,7 @@
                     2025</time>.</p>
 
         </div>
-        <img src="elise-thompson.webp" alt="elise-thompson">
+        <img src="../assets/elise-thompson.png" alt="elise-thompson">
         <blockquote>
             Understanding the brain begins with understanding development.
         </blockquote>
@@ -70,16 +59,24 @@
             <p>15 years</p>
             <h3>Institution:</h3>
             <p>Admiraal De Ruyter</p>
-            <a href="linkedin.com">
-                <img src="linkedin-icon.svg" alt="linkedin-icon">
-            </a>
-            <button popovertarget="identifiers">
-                <img src="person-id-card-icon.svg" alt="person-id-card-icon">
-                Identifiers
-            </button>
-            <div popover id="identifiers">
-                <p><em>ORCID:</em> 0000-0002-1825-0097</p>
-                <p><em>BIG registration:</em> 12345678901</p>
+            <div>
+                <a href="linkedin.com">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M42.6667 0C44.0812 0 45.4377 0.561903 46.4379 1.5621C47.4381 2.56229 48 3.91885 48 5.33333V42.6667C48 44.0812 47.4381 45.4377 46.4379 46.4379C45.4377 47.4381 44.0812 48 42.6667 48H5.33333C3.91885 48 2.56229 47.4381 1.5621 46.4379C0.561903 45.4377 0 44.0812 0 42.6667V5.33333C0 3.91885 0.561903 2.56229 1.5621 1.5621C2.56229 0.561903 3.91885 0 5.33333 0H42.6667ZM41.3333 41.3333V27.2C41.3333 24.8944 40.4174 22.6832 38.7871 21.0529C37.1568 19.4226 34.9456 18.5067 32.64 18.5067C30.3733 18.5067 27.7333 19.8933 26.4533 21.9733V19.0133H19.0133V41.3333H26.4533V28.1867C26.4533 26.1333 28.1067 24.4533 30.16 24.4533C31.1501 24.4533 32.0997 24.8467 32.7999 25.5468C33.5 26.2469 33.8933 27.1965 33.8933 28.1867V41.3333H41.3333ZM10.3467 14.8267C11.5348 14.8267 12.6743 14.3547 13.5145 13.5145C14.3547 12.6743 14.8267 11.5348 14.8267 10.3467C14.8267 7.86667 12.8267 5.84 10.3467 5.84C9.15143 5.84 8.00514 6.31481 7.15997 7.15997C6.31481 8.00514 5.84 9.15143 5.84 10.3467C5.84 12.8267 7.86667 14.8267 10.3467 14.8267ZM14.0533 41.3333V19.0133H6.66667V41.3333H14.0533Z" fill="#494949"/>
+                    </svg>
+
+                </a>
+                <button popovertarget="identifiers">
+                    <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.33333 28V29.3333H8V28H5.33333ZM18.6667 28V29.3333H21.3333V28H18.6667ZM8 28V26.6667H5.33333V28H8ZM18.6667 26.6667V28H21.3333V26.6667H18.6667ZM13.3333 21.3333C14.7478 21.3333 16.1044 21.8952 17.1046 22.8954C18.1048 23.8956 18.6667 25.2522 18.6667 26.6667H21.3333C21.3333 24.5449 20.4905 22.5101 18.9902 21.0098C17.4899 19.5095 15.4551 18.6667 13.3333 18.6667V21.3333ZM8 26.6667C8 25.2522 8.5619 23.8956 9.5621 22.8954C10.5623 21.8952 11.9188 21.3333 13.3333 21.3333V18.6667C11.2116 18.6667 9.17677 19.5095 7.67648 21.0098C6.17619 22.5101 5.33333 24.5449 5.33333 26.6667H8ZM13.3333 5.33333C11.9188 5.33333 10.5623 5.89524 9.5621 6.89543C8.5619 7.89562 8 9.25218 8 10.6667H10.6667C10.6667 9.95942 10.9476 9.28115 11.4477 8.78105C11.9478 8.28095 12.6261 8 13.3333 8V5.33333ZM18.6667 10.6667C18.6667 9.25218 18.1048 7.89562 17.1046 6.89543C16.1044 5.89524 14.7478 5.33333 13.3333 5.33333V8C14.0406 8 14.7189 8.28095 15.219 8.78105C15.719 9.28115 16 9.95942 16 10.6667H18.6667ZM13.3333 16C14.7478 16 16.1044 15.4381 17.1046 14.4379C18.1048 13.4377 18.6667 12.0812 18.6667 10.6667H16C16 11.3739 15.719 12.0522 15.219 12.5523C14.7189 13.0524 14.0406 13.3333 13.3333 13.3333V16ZM13.3333 13.3333C12.6261 13.3333 11.9478 13.0524 11.4477 12.5523C10.9476 12.0522 10.6667 11.3739 10.6667 10.6667H8C8 12.0812 8.5619 13.4377 9.5621 14.4379C10.5623 15.4381 11.9188 16 13.3333 16V13.3333ZM4 2.66667H36V0H4V2.66667ZM37.3333 4V25.3333H40V4H37.3333ZM36 26.6667H4V29.3333H36V26.6667ZM2.66667 25.3333V4H0V25.3333H2.66667ZM4 26.6667C3.64638 26.6667 3.30724 26.5262 3.05719 26.2761C2.80714 26.0261 2.66667 25.687 2.66667 25.3333H0C0 26.3942 0.421427 27.4116 1.17157 28.1618C1.92172 28.9119 2.93913 29.3333 4 29.3333V26.6667ZM37.3333 25.3333C37.3333 25.687 37.1929 26.0261 36.9428 26.2761C36.6928 26.5262 36.3536 26.6667 36 26.6667V29.3333C37.0609 29.3333 38.0783 28.9119 38.8284 28.1618C39.5786 27.4116 40 26.3942 40 25.3333H37.3333ZM36 2.66667C36.3536 2.66667 36.6928 2.80714 36.9428 3.05719C37.1929 3.30724 37.3333 3.64638 37.3333 4H40C40 2.93913 39.5786 1.92172 38.8284 1.17157C38.0783 0.421427 37.0609 0 36 0V2.66667ZM4 0C2.93913 0 1.92172 0.421427 1.17157 1.17157C0.421427 1.92172 0 2.93913 0 4H2.66667C2.66667 3.64638 2.80714 3.30724 3.05719 3.05719C3.30724 2.80714 3.64638 2.66667 4 2.66667V0ZM24 10.6667H32V8H24V10.6667ZM24 18.6667H32V16H24V18.6667Z" fill="#494949"/>
+                    </svg>
+
+                    Identifiers
+                </button>
+                <div popover id="identifiers">
+                    <p><em>ORCID:</em> 0000-0002-1825-0097</p>
+                    <p><em>BIG registration:</em> 12345678901</p>
+                </div>
             </div>
         </section>
         <section>
@@ -89,7 +86,7 @@
                 developmental disorders. I value cross-disciplinary exchange between laboratory researchers and clinical
                 neurologists.</p>
             <h3>Mesh terms</h3>
-            <ul class="mesh-terms">
+            <ul>
                 <li>Neurobiology</li>
                 <li>Nervous System Diseases</li>
                 <li>Developmental Disabilities</li>
@@ -102,21 +99,27 @@
         <section>
             <h3>Posts</h3>
             <div>
-                <button>Research projects</button>
+                <button class="active">Research projects</button>
                 <button>Internships</button>
                 <button>Open questions</button>
             </div>
-            <button popovertarget="bookmark-search-form">
-                <img src="magnifying-glass-icon.svg" alt="magnifying-glass-icon">
-            </button>
-            <form action="search" popover id="bookmark-search-form">
-                <label for="bookmark-search">Search in bookmarks:</label>
-                <input type="search" id="bookmark-search" placeholder="search in bookmarks">
-            </form>
-            <button popovertarget="sort-menu">
-                <img src="up-and-down-arrows-icon.svg" alt="up-and-down-arrows-icon">
-            </button>
-            <form popover id="sort-menu" action="http://httpbin.org/post">
+            <div>
+                <button popovertarget="bookmark-search-form">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.9709 17.0033L20.6667 20.6991M19.4992 10.4996C19.4992 12.8864 18.551 15.1755 16.8633 16.8633C15.1755 18.551 12.8864 19.4992 10.4996 19.4992C8.11276 19.4992 5.82367 18.551 4.13592 16.8633C2.44817 15.1755 1.5 12.8864 1.5 10.4996C1.5 8.11276 2.44817 5.82367 4.13592 4.13592C5.82367 2.44817 8.11276 1.5 10.4996 1.5C12.8864 1.5 15.1755 2.44817 16.8633 4.13592C18.551 5.82367 19.4992 8.11276 19.4992 10.4996Z" stroke="#494949" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </button>
+                <form action="search" popover id="bookmark-search-form">
+                    <label for="bookmark-search">Search in bookmarks:</label>
+                    <input type="search" id="bookmark-search" placeholder="search in bookmarks">
+                </form>
+                <button popovertarget="sort-menu">
+                    <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.00006 22.3337V9.00012M9.00012 18.3336L5.00006 22.3337L1 18.3336M15.6669 1V14.3335M11.6668 5.00006L15.6669 1L19.667 5.00006" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <form popover id="sort-menu" action="http://httpbin.org/post">
                 <p>Sort by:</p>
                 <input type="radio" id="relevancy" name="sort-preference">
                 <label for="relevancy">Relevancy</label>
@@ -129,23 +132,9 @@
                 <input type="radio" id="z-a" name="sort-preference">
                 <label for="z-a">Z-A</label>
             </form>
-            <div>
-                <article>
-                    <header>
-                        <p>publisch date: <time datetime="2026-02-02">02-02-2026</time></p>
-                        <button onclick="alert(`Implementation missing!`)">
-                            <img src="bookmark-icon.svg" alt="bookmark">
-                        </button>
-                    </header>
-                    <h3>Improving access to contraceptive care for vulnerable adolescents</h3>
-                    <p>
-                        <img src="speak-bubble-icon.svg" alt="speak-bubble-icon">
-                        20 Comments
-                    </p>
-                    <footer>
-                        <p>Research project</p>
-                    </footer>
-                </article>
+            </div>
+            <div id="list" class="horizontal-carousel">
+                <!-- ! CARDS SPAWN HERE -->
             </div>
         </section>
     </main>
