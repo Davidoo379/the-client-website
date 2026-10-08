@@ -1,7 +1,7 @@
 const files = [
-    './template-html/header-blueprint.html',
-    './template-html/aside-bar-blueprint.html',
-    './template-html/dashboard-content.html'];
+    '/template-html/header-blueprint.html',
+    '/template-html/aside-bar-blueprint.html',
+    '/template-html/dashboard-content.html'];
 
 // Start all downloads at once
 const responses = await Promise.all(files.map(f => fetch(f)));
@@ -17,12 +17,12 @@ for (const res of responses) {
         .pipeTo(document.body.streamAppendHTMLUnsafe());
 }
 
-import { loadTemplate, addCard } from "./cards.js";
+import { loadTemplate, addCard } from "/scripts/cards.js";
 
-const template = await loadTemplate("template-html/cards-template.html", "card-template");
-const profileCardTemplate = await loadTemplate("template-html/cards-template.html", "profile-card-template");
-const profileQuoteCardTemplate = await loadTemplate("template-html/cards-template.html", "profile-quote-card-template");
-const eventCardTemplate = await loadTemplate("template-html/cards-template.html", "event-card-template");
+const template = await loadTemplate("/template-html/cards-template.html", "card-template");
+const profileCardTemplate = await loadTemplate("/template-html/cards-template.html", "profile-card-template");
+const profileQuoteCardTemplate = await loadTemplate("/template-html/cards-template.html", "profile-quote-card-template");
+const eventCardTemplate = await loadTemplate("/template-html/cards-template.html", "event-card-template");
 
 
 // * HEADER HAMBURGER MENU
@@ -91,7 +91,7 @@ addCard(
     ["Open to questions"],
     [""],
     "recommended",
-    "./assets/elise-thompson.png",
+    "/assets/elise-thompson.png",
     "Admiraal De Ruyter",
     "Neurobiology (cognitive outcomes in childhood)"
 );
@@ -167,7 +167,7 @@ addCard(
     ["Open to questions"],
     [""],
     "bookmarks",
-    "./assets/tami-nikolaus.png",
+    "/assets/tami-nikolaus.png",
     "Gelre Hospital",
     "Hematology (transfusion medicine in children)"
 );
